@@ -18,6 +18,6 @@
 - 소비자: bomi94436
 - 생산자: ImHuiSeon
 
-### USECASE DIAGRAM
+# USECASE DIAGRAM
 
 ![default](diagram/usecase/usecase.png)
