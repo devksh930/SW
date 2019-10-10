@@ -314,7 +314,7 @@
 											"top": 447,
 											"width": 215,
 											"height": 13,
-											"text": "의뢰를 확인하고 '신청취쇠' 실행"
+											"text": "의뢰를 확인하고 '신청취소' 실행"
 										},
 										{
 											"_type": "LabelView",
@@ -1708,7 +1708,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFtpWcyq9QSZL0="
 					},
-					"name": "의뢰를 확인하고 '신청취쇠' 실행"
+					"name": "의뢰를 확인하고 '신청취소' 실행"
 				},
 				{
 					"_type": "UMLAction",
