@@ -41,11 +41,11 @@
 							"_parent": {
 								"$ref": "AAAAAAFtpICBysyp8Z4="
 							},
-							"font": "Arial;13;0",
+							"font": "Arial;20;0",
 							"left": 32,
 							"top": 32,
-							"width": 173.25537109375,
-							"height": 25,
+							"width": 261.162109375,
+							"height": 32,
 							"text": "<UC-B01 의뢰 수탁자 신청>",
 							"wordWrap": false
 						},

@@ -25,11 +25,11 @@
 							"_parent": {
 								"$ref": "AAAAAAFtsOXOX6ft1F0="
 							},
-							"font": "Arial;13;0",
+							"font": "Arial;20;0",
 							"left": 32,
 							"top": 32,
-							"width": 127.03173828125,
-							"height": 25,
+							"width": 190.048828125,
+							"height": 32,
 							"text": "<UC-B08 의뢰마감>",
 							"wordWrap": false
 						},
@@ -117,7 +117,7 @@
 											"font": "Arial;13;0",
 											"left": 144,
 											"top": -16,
-											"width": 86.6708984375,
+											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
 										},
@@ -219,7 +219,7 @@
 											"font": "Arial;13;0",
 											"left": 176,
 											"top": -32,
-											"width": 86.6708984375,
+											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
 										},
@@ -321,7 +321,7 @@
 											"font": "Arial;13;0",
 											"left": 64,
 											"top": -48,
-											"width": 86.6708984375,
+											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
 										},
@@ -421,7 +421,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 192,
-											"width": 86.6708984375,
+											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
 										},
@@ -522,7 +522,7 @@
 											"font": "Arial;13;0",
 											"left": 306,
 											"top": 64,
-											"width": 86.6708984375,
+											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
 										},
@@ -624,7 +624,7 @@
 											"font": "Arial;13;0",
 											"left": 98,
 											"top": 96,
-											"width": 86.6708984375,
+											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
 										},
@@ -758,7 +758,7 @@
 											"font": "Arial;13;0",
 											"left": 322,
 											"top": 16,
-											"width": 86.6708984375,
+											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
 										},
@@ -875,7 +875,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 26,
-											"width": 86.6708984375,
+											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
 										},
@@ -977,7 +977,7 @@
 											"font": "Arial;13;0",
 											"left": -44,
 											"top": -48,
-											"width": 86.6708984375,
+											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
 										},

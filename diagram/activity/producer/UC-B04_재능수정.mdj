@@ -25,11 +25,11 @@
 							"_parent": {
 								"$ref": "AAAAAAFtpoDdtov5I5Q="
 							},
-							"font": "Arial;13;0",
+							"font": "Arial;20;0",
 							"left": 32,
 							"top": 32,
-							"width": 129,
-							"height": 25,
+							"width": 190.048828125,
+							"height": 32,
 							"text": "<UC-B04 재능수정>",
 							"wordWrap": false
 						},

@@ -25,11 +25,11 @@
 							"_parent": {
 								"$ref": "AAAAAAFtsC01ssknzlE="
 							},
-							"font": "Arial;13;0",
+							"font": "Arial;20;0",
 							"left": 32,
 							"top": 16,
-							"width": 127.03173828125,
-							"height": 25,
+							"width": 190.048828125,
+							"height": 32,
 							"text": "<UC-B05 재능삭제>",
 							"wordWrap": false
 						},

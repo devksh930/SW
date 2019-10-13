@@ -25,11 +25,11 @@
 							"_parent": {
 								"$ref": "AAAAAAFts7bebU/FFiE="
 							},
-							"font": "Arial;13;0",
+							"font": "Arial;20;0",
 							"left": 32,
 							"top": 32,
-							"width": 127.03173828125,
-							"height": 25,
+							"width": 190.048828125,
+							"height": 32,
 							"text": "<UC-B09 대금수령>",
 							"wordWrap": false
 						},
