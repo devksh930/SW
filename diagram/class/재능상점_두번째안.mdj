@@ -1491,7 +1491,7 @@
 											"top": 494,
 											"width": 166,
 											"height": 13,
-											"text": "+setIdx(String)",
+											"text": "+setIdx(Int)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1695,7 +1695,7 @@
 											"top": 674,
 											"width": 166,
 											"height": 13,
-											"text": "+Operation1()",
+											"text": "+setCategory_id(Int)",
 											"horizontalAlignment": 0
 										}
 									],
@@ -2215,7 +2215,7 @@
 											"top": 347,
 											"width": 166,
 											"height": 13,
-											"text": "+getCategory_id()",
+											"text": "+getCategory_idx()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2232,7 +2232,7 @@
 											"top": 362,
 											"width": 166,
 											"height": 13,
-											"text": "+setCategory_id(String)",
+											"text": "+setCategory_idx(Int)",
 											"horizontalAlignment": 0
 										}
 									],
@@ -4274,8 +4274,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFueIRv7jFsOIc="
 									},
-									"name": "String",
-									"type": ""
+									"name": "Int"
 								}
 							]
 						},
@@ -4428,7 +4427,17 @@
 							"_parent": {
 								"$ref": "AAAAAAFueHe0EzATkoc="
 							},
-							"name": "Operation1"
+							"name": "setCategory_id",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuePcB/59vI6g=",
+									"_parent": {
+										"$ref": "AAAAAAFueIZUoTHMTu4="
+									},
+									"name": "Int"
+								}
+							]
 						}
 					]
 				},
@@ -4680,7 +4689,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFueHlZMTBDzRo="
 							},
-							"name": "getCategory_id"
+							"name": "getCategory_idx"
 						},
 						{
 							"_type": "UMLOperation",
@@ -4688,7 +4697,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFueHlZMTBDzRo="
 							},
-							"name": "setCategory_id",
+							"name": "setCategory_idx",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4696,8 +4705,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFueItzujKjwX8="
 									},
-									"name": "String",
-									"type": ""
+									"name": "Int"
 								}
 							]
 						}
@@ -4728,7 +4736,8 @@
 								"$ref": "AAAAAAFueJugczLlxmQ="
 							},
 							"name": "register_date",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -4737,7 +4746,8 @@
 								"$ref": "AAAAAAFueJugczLlxmQ="
 							},
 							"name": "state",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -4746,7 +4756,8 @@
 								"$ref": "AAAAAAFueJugczLlxmQ="
 							},
 							"name": "member_id",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -4755,7 +4766,8 @@
 								"$ref": "AAAAAAFueJugczLlxmQ="
 							},
 							"name": "commission_idx",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -4764,7 +4776,8 @@
 								"$ref": "AAAAAAFueJugczLlxmQ="
 							},
 							"name": "talent_idx",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					],
 					"operations": [
