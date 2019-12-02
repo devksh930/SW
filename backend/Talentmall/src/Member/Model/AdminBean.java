@@ -1,4 +1,4 @@
-package Member;
+package Member.Model;
 
 public class AdminBean {
     private String id;

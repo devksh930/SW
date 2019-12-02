@@ -16,8 +16,19 @@
     <p>ID<input type="text" name="id"></p>
     <p>PW<input type="text" name="pw"></p>
     <input type="submit" value="로그인">
-  <p>${message}</p>
-
+    <p>${message}</p>
 </form>
+
+<p>
+    <form action="join" method="post">
+<p>ID <input type="text" name="id"></p>
+<p>PW <input type="text" name="pw"></p>
+<p>NAME <input type="text" name="name"></p>
+<p>PHONE <input type="text" name="phone"></p>
+<p>소비자<input type="radio" name="role" value=1> 생산자<input type="radio" name="role" value=2></p>
+<input type="submit" value="회원가입">
+<p>${message}</p>
+</form>
+</p>
 </body>
 </html>

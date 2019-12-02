@@ -1,4 +1,4 @@
-package Member;
+package Member.Model;
 
 public class MemberBean {
     private String id;
@@ -40,6 +40,11 @@ public class MemberBean {
     }
 
     public String getKind() {
+        if(kind.equals("1")){
+            kind ="소비자";
+        }else if(kind.equals("2")){
+            kind = "생산자";
+        }
         return kind;
     }
 

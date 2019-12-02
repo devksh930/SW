@@ -25,23 +25,24 @@
         </init-param>
         <load-on-startup>100</load-on-startup>
     </servlet>
+
+
     <servlet>
-        <servlet-name>HelloServlet</servlet-name>
-        <servlet-class>example.HelloServlet</servlet-class>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>Member.Control.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>HelloServlet</servlet-name>
-        <url-pattern>/helloservlet</url-pattern>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
     </servlet-mapping>
 
-
     <servlet>
-        <servlet-name>MemberControll</servlet-name>
-        <servlet-class>Member.MemberControll</servlet-class>
+        <servlet-name>JoinServlet</servlet-name>
+        <servlet-class>Member.Control.JoinServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>MemberControll</servlet-name>
-        <url-pattern>/login</url-pattern>
+        <servlet-name>JoinServlet</servlet-name>
+        <url-pattern>/join</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
