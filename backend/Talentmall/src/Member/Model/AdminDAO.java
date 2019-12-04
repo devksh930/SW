@@ -1,29 +1,28 @@
 package Member.Model;
 
-
 import DBconf.DBManager;
-
+import org.apache.axis.utils.Admin;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+public class AdminDAO extends DBManager {
 
-public class MemberDAO extends DBManager {
-    private MemberDAO() {
+    private AdminDAO() {
 
     }
 
-    private static MemberDAO instance = new MemberDAO();
+    private static AdminDAO instance = new AdminDAO();
 
-    public static MemberDAO getInstance() {
+    public static AdminDAO getInstance() {
         return instance;
     }
 
     public int memberCheck(String id, String pw) {
         int result = -1;
-        String sql = "SELECT pw FROM members WHERE id=?";
+        String sql = "SELECT pw FROM admins WHERE id=?";
         ResultSet rs = null;
         Connection conn = null;
         PreparedStatement pstmt = null;
@@ -62,24 +61,21 @@ public class MemberDAO extends DBManager {
         return result;
     }
 
-    public MemberBean getMember(String userid) {
-        MemberBean memberBean = null;
-        String sql = "select * from members where id=?";
+    public AdminBean getMember(String id) {
+        AdminBean adminBean = null;
+        String sql = "select * from admin where id=?";
         Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         try {
             conn = DBManager.connect();
             pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, userid);
+            pstmt.setString(1, id);
             rs = pstmt.executeQuery();
             if (rs.next()) {
-                memberBean = new MemberBean();
-                memberBean.setId(rs.getString("id"));
-                memberBean.setPw(rs.getString("pw"));
-                memberBean.setName(rs.getString("name"));
-                memberBean.setPhone(rs.getString("phone"));
-                memberBean.setKind(rs.getString("kind"));
+                adminBean = new AdminBean();
+                adminBean.setId(rs.getString("id"));
+                adminBean.setPw(rs.getString("pw"));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -95,45 +91,6 @@ public class MemberDAO extends DBManager {
                 e.printStackTrace();
             }
         }
-        return memberBean;
+        return adminBean;
     } // getMember end
-
-    public int memberJoin(MemberBean memberBean) {
-        int result = -1;
-        String sql = "insert into members values(?,?,?,?,?)";
-        String kind = null;
-        Connection conn = null;
-        PreparedStatement pstmt = null;
-        try {
-            conn = DBManager.connect();
-            pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, memberBean.getId());
-            pstmt.setString(2, memberBean.getPw());
-            pstmt.setString(3, memberBean.getName());
-            pstmt.setString(4, memberBean.getPhone());
-            if (memberBean.getKind().equals("소비자")) {
-                kind = "1";
-            } else if (memberBean.getKind().equals("생산자")) {
-                kind = "2";
-            }
-
-            pstmt.setString(5, kind);
-            result = pstmt.executeUpdate();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if (pstmt != null)
-                    pstmt.close();
-                if (conn != null)
-                    conn.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        return result;
-    }
 }
-
-

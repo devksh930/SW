@@ -5,9 +5,9 @@ import java.sql.*;
 public class DBManager {
 
     public static final String databaseDriver = "com.mysql.cj.jdbc.Driver";
-    public static final String databaseUrl = "jdbc:mysql://localhost:3306/mydb?useSSL=false";
-    public static final String databaseUser = "root";
-    public static final String databasePassword = "1234";
+    public static final String databaseUrl = "jdbc:mysql://market-db-server.mysql.database.azure.com:3306/mydb?useSSL=true&requireSSL=false";
+    public static final String databaseUser = "marketroot@market-db-server";
+    public static final String databasePassword = "DBscore100";
     public static PreparedStatement preparedStatement;
     public static ResultSet resultSet;
     public static Connection connection = null;
@@ -20,7 +20,8 @@ public class DBManager {
         close();
     }
 
-    public static Connection connect() {
+    public static Connection connect()
+    {
         try {
             Class.forName(databaseDriver);
             connection = DriverManager.getConnection(databaseUrl, databaseUser, databasePassword);

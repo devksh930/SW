@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: devksh930
@@ -13,6 +14,7 @@
 <body>
 
 <form action="login" method="post">
+    <p><c:out value="${permission}"/></p>
     <p>ID<input type="text" name="id"></p>
     <p>PW<input type="text" name="pw"></p>
     <input type="submit" value="로그인">
@@ -29,6 +31,13 @@
 <input type="submit" value="회원가입">
 <p>${message}</p>
 </form>
-</p>
+<c:choose>
+    <c:when test="${loginUser.id eq admin}">
+        <p><c:out value="${loginUsers.id}"/>관리자로그인</p>
+    </c:when>
+    <c:otherwise>
+        <p><c:out value="${loginUsers.id}"/>님 <c:out value="${loginUsers.name}"/></p>
+    </c:otherwise>
+</c:choose>
 </body>
 </html>

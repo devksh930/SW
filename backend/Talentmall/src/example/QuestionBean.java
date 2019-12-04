@@ -12,7 +12,7 @@ public class QuestionBean {
         return idx;
     }
 
-    public void setIdx(int idx) {
+    public void setIdx(int idx) { 
         this.idx = idx;
     }
 
