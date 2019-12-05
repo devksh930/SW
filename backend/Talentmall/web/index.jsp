@@ -9,7 +9,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
 <head>
-    <title>HelloWorld</title>
+    <title>TEST</title>
 </head>
 <body>
 
@@ -33,11 +33,16 @@
 </form>
 <c:choose>
     <c:when test="${loginUser.id eq admin}">
-        <p><c:out value="${loginUsers.id}"/>관리자로그인</p>
+        <p><c:out value="${loginUser.id}"/>관리자로그인</p>
     </c:when>
     <c:otherwise>
-        <p><c:out value="${loginUsers.id}"/>님 <c:out value="${loginUsers.name}"/></p>
+        <p><c:out value="${loginUser.id}"/>님 <c:out value="${loginUser.name}"/></p>
     </c:otherwise>
 </c:choose>
+
+<c:forEach var="cat" items="${list}">
+    <p><c:out value="${cat.idx}"/>:<c:out value="${cat.name}"/></p>
+</c:forEach>
 </body>
+
 </html>

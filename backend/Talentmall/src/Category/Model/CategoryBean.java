@@ -1,4 +1,4 @@
-package example;
+package Category.Model;
 
 public class CategoryBean {
     private int idx;
