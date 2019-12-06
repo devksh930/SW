@@ -21,14 +21,55 @@ public class TalentServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+
+        String urlSubPath = request.getPathInfo().split("/")[1];
+        String viewName = null;
+        System.out.println(urlSubPath);
+
         TalentDAO talentDAO = TalentDAO.getInstance();
-        List<TalentBean> talentlist=talentDAO.getList();
+        List<TalentBean> talentlist = null;
+        switch (urlSubPath) {
+            case "all":
+                System.out.println(urlSubPath);
+                talentlist = talentDAO.getList();
+                break;
+            case "design":
+                System.out.println(urlSubPath);
+                talentlist = talentDAO.getCategoryList(String.valueOf(2));
+                break;
+            case "it":
+                System.out.println(urlSubPath);
+                talentlist = talentDAO.getCategoryList(String.valueOf(3));
+                break;
+            case "business":
+                talentlist = talentDAO.getCategoryList(String.valueOf(4));
+                break;
+            case "text":
+                System.out.println(urlSubPath);
+                talentlist = talentDAO.getCategoryList(String.valueOf(5));
+                break;
+            case "trans":
 
-//        List<CategoryBean> sectionlist=categoryDAO.getDevision(2);
+                System.out.println(urlSubPath);
+                talentlist = talentDAO.getCategoryList(String.valueOf(12));
+                break;
+            case "tutor":
+                System.out.println(urlSubPath);
+                talentlist = talentDAO.getCategoryList(String.valueOf(13));
+                break;
+            case "etc":
 
-        request.setAttribute("talentlist",talentlist);
+                System.out.println(urlSubPath);
+                talentlist = talentDAO.getCategoryList(String.valueOf(14));
+                break;
+        }
+        request.setAttribute("talentlist", talentlist);
+        viewName = "/index.jsp";
 
-        RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-        rd.forward(request,response);
+        if (viewName != null) {
+            RequestDispatcher view = request.getRequestDispatcher(viewName);
+            view.forward(request, response);
+        }
     }
 }
