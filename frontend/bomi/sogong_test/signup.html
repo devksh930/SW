@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>재능 상점</title>
 
     <link href="css/bootstrap-bomi.min.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/signup.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -22,65 +22,45 @@
     <form class="form" action="" target="_self">
         <!-- 생산자 & 소비자 선택 -->
 
+        <div class="container group">
 
-
-        <div class="container">
-
-            <section class="section section--maa">
-                <h2 class="section__title">
-                    Maa
-                </h2>
+            <section class="section section--maa ml-sm-4">
                 <div class="toggle-button toggle-button--maa">
-                    <input id="toggleButton7" name="radio3" type="radio">
-                    <label for="toggleButton7" data-text="Option 1"></label>
+                    <input id="producer" name="kind" type="radio">
+                    <label for="producer" data-text="생산자"></label>
                     <div class="toggle-button__icon"></div>
                 </div>
                 <div class="toggle-button toggle-button--maa">
-                    <input id="toggleButton8" name="radio3" type="radio">
-                    <label for="toggleButton8" data-text="Option 2"></label>
-                    <div class="toggle-button__icon"></div>
-                </div>
-                <div class="toggle-button toggle-button--maa">
-                    <input id="toggleButton9" name="radio3" type="radio">
-                    <label for="toggleButton9" data-text="Option 3"></label>
+                    <input id="consumer" name="kind" type="radio">
+                    <label for="consumer" data-text="소비자"></label>
                     <div class="toggle-button__icon"></div>
                 </div>
             </section>
 
         </div>
 
-
-
-
-        <button type="button" class="button2 buttonBlue rounded-pill active">생산자
-            <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
-        </button>
-        <button type="button" class="button2 buttonBlue rounded-pill" style="float: right">소비자
-            <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
-        </button>
-
         <!-- 아이디 -->
-        <div class="group mt-5">
-            <input type="text"><span class="highlight"></span><span class="bar"></span>
-            <label>ID</label>
+        <div class="group">
+            <input type="text" class="input"><span class="highlight"></span><span class="bar"></span>
+            <label class="label">ID</label>
         </div>
 
         <!-- 비밀번호 -->
         <div class="group">
-            <input type="password"><span class="highlight"></span><span class="bar"></span>
-            <label>Password</label>
+            <input type="password" class="input"><span class="highlight"></span><span class="bar"></span>
+            <label class="label">Password</label>
         </div>
 
         <!-- 이름 -->
         <div class="group">
-            <input type="text"><span class="highlight"></span><span class="bar"></span>
-            <label>Name</label>
+            <input type="text" class="input"><span class="highlight"></span><span class="bar"></span>
+            <label class="label">Name</label>
         </div>
 
         <!-- 전화번호 -->
         <div class="group">
-            <input type="text"><span class="highlight"></span><span class="bar"></span>
-            <label>Phone</label>
+            <input type="text" class="input"><span class="highlight"></span><span class="bar"></span>
+            <label class="label">Phone</label>
         </div>
 
         <!-- 회원가입 버튼 -->

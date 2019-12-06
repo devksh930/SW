@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: Helvetica;
+    /*font-family: Helvetica;*/
     background: #eee;
     /*-webkit-font-smoothing: antialiased;*/
 }
@@ -26,7 +26,7 @@ h3 {
 }
 
 .form {
-    width: 1000px;
+    width: 380px;
     margin: 4em auto;
     padding: 3em 2em 2em 2em;
     background: #fafafa;
@@ -40,7 +40,7 @@ h3 {
     margin-bottom: 45px;
 }
 
-input {
+.input {
     font-size: 18px;
     padding: 10px 10px 10px 5px;
     -webkit-appearance: none;
@@ -53,14 +53,14 @@ input {
     border-bottom: 1px solid #757575;
 }
 
-input:focus {
+.input:focus {
     outline: none;
 }
 
 
 /* Label */
 
-label {
+.label {
     color: #999;
     font-size: 18px;
     font-weight: normal;
@@ -74,7 +74,7 @@ label {
 
 /* active */
 
-input:focus ~ label, input.used ~ label {
+.input:focus ~ .label, .input.used ~ .label {
     top: -20px;
     transform: scale(.75);
     left: -2px;
@@ -112,7 +112,7 @@ input:focus ~ label, input.used ~ label {
 
 /* active */
 
-input:focus ~ .bar:before, input:focus ~ .bar:after {
+.input:focus ~ .bar:before, .input:focus ~ .bar:after {
     width: 50%;
 }
 
@@ -132,7 +132,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 
 /* active */
 
-input:focus ~ .highlight {
+.input:focus ~ .highlight {
     animation: inputHighlighter 0.3s ease;
 }
 
@@ -153,6 +153,7 @@ input:focus ~ .highlight {
 /* Button */
 
 /*회원 가입*/
+
 .button {
     position: relative;
     display: inline-block;
@@ -179,23 +180,7 @@ input:focus ~ .highlight {
 
 /*생산자, 소비자*/
 .button2 {
-    position: relative;
-    display: inline-block;
-    padding: 12px 24px;
-    margin: .3em 0 1em 0;
     width: 45%;
-    vertical-align: middle;
-    color: #fff;
-    font-size: 16px;
-    line-height: 20px;
-    -webkit-font-smoothing: antialiased;
-    text-align: center;
-    letter-spacing: 1px;
-    background: transparent;
-    border: 0;
-    border-bottom: 2px solid #88472F;
-    cursor: pointer;
-    transition: all 0.15s ease;
 }
 
 .button2:focus {
@@ -294,28 +279,21 @@ input:focus ~ .highlight {
 
 .section {
     text-align: center;
-    height: 100%;
+    height: 50%;
     margin: 0 auto;
-    padding: 6em 0;
-}
-
-.section__title {
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #fff;
-    margin-bottom: 3em;
+    /*padding: 6em 0;*/
+    font-size: 18px;
 }
 
 .section--maa {
-    background: #2D4659;
+    background: #fafafa;
 }
 
 .toggle-button {
     position: relative;
     display: inline-block;
-    color: #fff;
-    margin: 0 20px;
+    color: #636363;
+    margin: 0 0px;
 }
 
 .toggle-button label {
@@ -413,7 +391,7 @@ input:focus ~ .highlight {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: #fff;
+    background: #9d7566;
     box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -434,7 +412,7 @@ input:focus ~ .highlight {
     left: 4px;
     width: 60%;
     height: 60%;
-    background: #61B136;
+    background: #9d7566;
     animation: zoomOut .2s ease-out;
     transform: scale(0);
     transition: none;
