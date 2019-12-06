@@ -30,5 +30,8 @@
     <orderEntry type="library" name="taglibs-standard-impl-1.2.5" level="project" />
     <orderEntry type="library" name="taglibs-standard-jstlel-1.2.5" level="project" />
     <orderEntry type="library" name="taglibs-standard-spec-1.2.5" level="project" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="popper" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
   </component>
 </module>

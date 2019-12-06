@@ -57,7 +57,7 @@
 
     <servlet>
         <servlet-name>CategoryServlet</servlet-name>
-        <servlet-class>Category.Control.CartegoryServlet</servlet-class>
+        <servlet-class>Category.Control.CategoryServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CategoryServlet</servlet-name>

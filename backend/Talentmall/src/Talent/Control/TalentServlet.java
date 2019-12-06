@@ -65,7 +65,7 @@ public class TalentServlet extends HttpServlet {
                 break;
         }
         request.setAttribute("talentlist", talentlist);
-        viewName = "/index.jsp";
+        viewName = "/commission_list.jsp";
 
         if (viewName != null) {
             RequestDispatcher view = request.getRequestDispatcher(viewName);

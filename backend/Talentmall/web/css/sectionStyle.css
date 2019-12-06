@@ -1,0 +1,66 @@
+@font-face {
+    font-family: kim;
+    src: url("../fonts/kim.ttf");
+}
+
+.font
+{
+    font-family: "kim";
+    color: #FFFFFF;
+}
+
+.size
+{
+    padding-top: 10px;
+    width: 900px;
+    height: 280px;
+    margin: 10px auto;
+}
+
+.car_st
+{
+    position: relative;
+    width: 45%;
+    height: 260px;
+    float: left;
+}
+
+.intro_st
+{
+    width: 400px;
+    height: 260px;
+    padding: 0px 20px;
+    margin: 0px 30px;
+    text-align: left;
+    float: left;
+    background-color: #f4e8ce;
+    border-radius: 15px;
+    color: #000000;
+    line-height: 200%;
+}
+
+.btn_con_st
+{
+    width: 800px;
+    height: 380px;
+    margin: 30px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn-st {
+    color: #455f57;
+    background-color: #FFFFFF;
+    border: 4px solid #537068;
+    font-size: 20px;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.btn-st:hover {
+    color: #FFFFFF;
+    background-color: #495f58;
+    border-color: #415651;
+}

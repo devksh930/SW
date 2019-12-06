@@ -1,0 +1,477 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: Helvetica;*/
+    background: #eee;
+    /*-webkit-font-smoothing: antialiased;*/
+}
+
+hgroup {
+    text-align: center;
+    margin-top: 4em;
+}
+
+h1, h3 {
+    font-weight: 300;
+}
+
+h1 {
+    color: #636363;
+}
+
+h3 {
+    color: #4a89dc;
+}
+
+.form {
+    width: 380px;
+    margin: 4em auto;
+    padding: 3em 2em 2em 2em;
+    background: #fafafa;
+    border: 1px solid #ebebeb;
+    border-radius: 25px !important;
+    box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 1px 0px, rgba(0, 0, 0, 0.09804) 0px 1px 2px 0px;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    -webkit-appearance: none;
+    display: block;
+    background: #fafafa;
+    color: #636363;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #757575;
+}
+
+.input:focus {
+    outline: none;
+}
+
+
+/* Label */
+
+.label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: all 0.2s ease;
+}
+
+
+/* active */
+
+.input:focus ~ .label, .input.used ~ .label {
+    top: -20px;
+    transform: scale(.75);
+    left: -2px;
+    /* font-size: 14px; */
+    color: #9d7566;
+}
+
+
+/* Underline */
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #9d7566;
+    transition: all 0.2s ease;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+
+/* active */
+
+.input:focus ~ .bar:before, .input:focus ~ .bar:after {
+    width: 50%;
+}
+
+
+/* Highlight */
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+/* active */
+
+.input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+
+/* Animations */
+
+@keyframes inputHighlighter {
+    from {
+        background: #9d7566;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+
+/* Button */
+
+/*회원 가입*/
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    margin: .3em 0 1em 0;
+    width: 100%;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    letter-spacing: 1px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #88472F;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.button:focus {
+    outline: 0;
+}
+
+/*생산자, 소비자*/
+.button2 {
+    width: 45%;
+}
+
+.button2:focus {
+    outline: 0;
+}
+
+
+/* Button modifiers */
+
+.buttonBlue {
+    /*background: #4a89dc;*/
+    background: #9d7566;
+    text-shadow: 1px 1px 0 #88472F;
+}
+
+.buttonBlue:hover {
+    /*background: #357bd8;*/
+    background: #88472F;
+}
+
+.buttonBlue.active {
+    /*background: #357bd8;*/
+    background: #88472F;
+}
+
+.buttonBlue2 {
+    /*background: #4a89dc;*/
+    background: #9d7566;
+    text-shadow: 1px 1px 0 #88472F;
+}
+
+.buttonBlue2:hover {
+    /*background: #357bd8;*/
+    background: #88472F;
+}
+
+
+/* Ripples container */
+
+.ripples {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: transparent;
+}
+
+
+/* Ripples circle */
+
+.ripplesCircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.ripples.is-active .ripplesCircle {
+    animation: ripples .4s ease-in;
+}
+
+
+/* Ripples animation */
+
+@keyframes ripples {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 200%;
+        padding-bottom: 200%;
+        opacity: 0;
+    }
+}
+
+
+/*라디오 버튼 **********************************************/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
+.section {
+    text-align: center;
+    height: 50%;
+    margin: 0 auto;
+    /*padding: 6em 0;*/
+    font-size: 18px;
+}
+
+.section--maa {
+    background: #fafafa;
+}
+
+.toggle-button {
+    position: relative;
+    display: inline-block;
+    color: #636363;
+    margin: 0 0px;
+}
+
+.toggle-button label {
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: left;
+}
+
+.toggle-button input {
+    display: none;
+}
+
+.toggle-button__icon {
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.toggle-button__icon:before, .toggle-button__icon:after {
+    content: "";
+    position: absolute;
+    transition: 0.2s ease-out;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-200%, 0);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translate(200%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes hover {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .toggle-button--maa {
+        display: block;
+        width: 110px;
+        margin: 0 auto 10px auto;
+    }
+}
+
+.toggle-button--maa label {
+    width: 110px;
+    height: 20px;
+    line-height: 20px;
+    transition: all 0.2s;
+}
+
+.toggle-button--maa label:before, .toggle-button--maa label:after {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 110px;
+    transition: all 0.2s .1s ease-out;
+}
+
+.toggle-button--maa label:before {
+    content: attr(data-text);
+}
+
+.toggle-button--maa input:checked ~ .toggle-button__icon:before {
+    animation: wave .7s ease-out;
+}
+
+.toggle-button--maa input:checked ~ .toggle-button__icon:after {
+    transform: scale(1);
+    animation: zoomIn .2s;
+}
+
+.toggle-button--maa .toggle-button__icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #9d7566;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-button--maa .toggle-button__icon:before, .toggle-button--maa .toggle-button__icon:after {
+    border-radius: 50%;
+}
+
+.toggle-button--maa .toggle-button__icon:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.toggle-button--maa .toggle-button__icon:after {
+    top: 4px;
+    left: 4px;
+    width: 60%;
+    height: 60%;
+    background: #9d7566;
+    animation: zoomOut .2s ease-out;
+    transform: scale(0);
+    transition: none;
+}
+
+.toggle-button--maa:hover input:not(:checked) ~ .toggle-button__icon {
+    animation: hover .2s;
+}
+
+.toggle-button--maa:hover input:not(:checked) ~ label:before {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes hover {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes wave {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    40% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}

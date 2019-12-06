@@ -16,12 +16,11 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet(name = "/login")
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         int result;
-        String url = "index.jsp";
+        String url = "login.jsp";
         String id = request.getParameter("id");
         String pw = request.getParameter("pw");
         if(id.equals("admin")){
@@ -53,7 +52,7 @@ public class LoginServlet extends HttpServlet {
            HttpSession session = request.getSession();  //세션 객체 생성
             session.setAttribute("loginUser", login_user_info);  // vo에 저장한 유저정보를 세션  값으로 입력
             request.setAttribute("message", "로그인에 성공했습니다.");
-            url = "index.jsp";
+            url = "mainPage.jsp";
         } else if (result == 0) {
             request.setAttribute("message", "비밀번호가 틀렸습니다.");
         } else if (result == -1) {
@@ -66,12 +65,12 @@ public class LoginServlet extends HttpServlet {
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String url = "index.jsp";
+        String url = "login.jsp";
         HttpSession session = request.getSession();
         System.out.println("path는?");
 
-        if (session.getAttribute("loginuser") != null) {
-            url = "index.jsp";
+        if (session.getAttribute("loginUser") != null) {
+            url = "mainPage.jsp";
         }
 
         RequestDispatcher dispatcher = request.getRequestDispatcher(url);
