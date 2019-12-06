@@ -1,6 +1,6 @@
-package example;
+package Talent.Model;
 
-public class TeletntsBean {
+public class TalentBean {
     private int idx;
     private String title;
     private String contents;

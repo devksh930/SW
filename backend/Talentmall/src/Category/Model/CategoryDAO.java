@@ -19,7 +19,7 @@ public class CategoryDAO extends DBManager {
     }
 
     public ArrayList<CategoryBean> getsection() {
-        String sql = "select * from category where category_idx is null";
+        String sql = "select * from category";
         ArrayList<CategoryBean> list = new ArrayList<CategoryBean>();
         Connection conn = null;
         PreparedStatement pstmt = null;
@@ -32,6 +32,7 @@ public class CategoryDAO extends DBManager {
                 CategoryBean categoryBean = new CategoryBean();
                 categoryBean.setIdx(rs.getInt("idx"));
                 categoryBean.setName(rs.getString("name"));
+                categoryBean.setCategory_idx(rs.getInt("category_idx"));
                 list.add(categoryBean);
 //                for(int i=0; i<list.size(); i++){
 //                    System.out.println(list.get(i).getName());
@@ -80,6 +81,18 @@ public class CategoryDAO extends DBManager {
 
         } catch (SQLException e) {
             e.printStackTrace();
+        }finally {
+            try {
+                if (rs != null)
+                    rs.close();
+                if (pstmt != null)
+                    pstmt.close();
+                if (conn != null)
+                    conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
         }
 
 

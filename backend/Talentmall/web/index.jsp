@@ -40,9 +40,25 @@
     </c:otherwise>
 </c:choose>
 
-<c:forEach var="cat" items="${list}">
-    <p><c:out value="${cat.idx}"/>:<c:out value="${cat.name}"/></p>
+<%--<c:forEach var="cat" items="${list}">--%>
+<%--    <p><c:out value="${cat.idx}"/>:<c:out value="${cat.name}"/></p>--%>
+<%--</c:forEach>--%>
+<select id="section_sel">
+
+    <c:forEach var="section" items="${sectionlist}" >
+        <c:if test="${section.category_idx eq 0}">
+        <option value="<c:out value="${section.idx}"/>">
+            <c:out value="${section.name}"/>
+        </option>
+        </c:if>
+    </c:forEach>
+</select>
+
+<c:forEach var="list" items="${talentlist}">
+   <p><c:out value="${list.title}"/> ----<c:out value="${list.contents}"/>----<c:out value="${list.start_date}"/>----<c:out value="${list.end_date}"/>----<c:out value="${list.member_id}"/>----<c:out value="${list.category_id}"/></p>
 </c:forEach>
+
+
 </body>
 
 </html>

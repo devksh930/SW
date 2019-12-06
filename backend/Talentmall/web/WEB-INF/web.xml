@@ -46,6 +46,16 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>TalentServlet</servlet-name>
+        <servlet-class>Talent.Control.TalentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TalentServlet</servlet-name>
+        <url-pattern>/talent</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
         <servlet-name>CategoryServlet</servlet-name>
         <servlet-class>Category.Control.CartegoryServlet</servlet-class>
     </servlet>

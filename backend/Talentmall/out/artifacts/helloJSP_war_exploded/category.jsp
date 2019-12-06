@@ -12,7 +12,7 @@
     <title>category test</title>
 </head>
 <body>
-    <c:forEach var="cat" items="${list}">
+    <c:forEach var="cat" items="${sectionlist}">
         <p><c:out value="${cat.idx}"/>:<c:out value="${cat.name}"/></p>
     </c:forEach>
 </body>
