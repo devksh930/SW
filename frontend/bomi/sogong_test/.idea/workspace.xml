@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10bf34cb-2734-41fb-9aca-8b9663c2d431" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="sogong_test" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1US4GqwoZmbwAFUnsNzbdUHYrHo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10bf34cb-2734-41fb-9aca-8b9663c2d431" name="Default Changelist" comment="" />
+      <created>1575336569885</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575336569885</updated>
+      <workItem from="1575336593057" duration="51000" />
+      <workItem from="1575336709833" duration="62000" />
+      <workItem from="1575336806774" duration="50000000" />
+      <workItem from="1575549850551" duration="16986000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="201" key="#Inspections" timestamp="1575462346007">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="440" y="201" key="#Inspections/0.23.1680.1027@0.23.1680.1027" timestamp="1575462346007" />
+    <state x="0" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575624022083">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="0" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1575624022083" />
+    <state x="578" y="289" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575545849518">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="578" y="289" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1575545849518" />
+    <state x="317" y="99" key="SettingsEditor" timestamp="1575386720117">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="317" y="99" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1575386720117" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1575553928523">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1575553928523" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1575554027916">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1575554027916" />
+  </component>
+</project>

@@ -1,0 +1,268 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>재능상점</title>
+
+    <!-- 순서 꼭 이거여야 함 -->
+    <link href="css/bootstrap-bomi.min.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <style type="text/css">
+        .my-border1 {
+            /*border: none;*/
+            /*border: 1px solid #A6A6A6;*/
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .form {
+            width: 1000px;
+            margin: 2em auto;
+            padding: 3em 2em 2em 2em;
+            background: #fff;
+            border: 1px solid #ebebeb;
+            border-radius: 25px !important;
+            box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 1px 0px, rgba(0, 0, 0, 0.09804) 0px 1px 2px 0px;
+        }
+
+        .form:hover {
+            border: 1px solid #bbb;
+        }
+
+        .form:hover > .form-head > .h1 {
+            color: #9d7566;
+        }
+
+        .producer {
+            height: 100%;
+            padding-left: 20%;
+            border-left: 1px solid #ebebeb;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container p-5">
+    <br/>
+
+    <!-- bar -->
+    <nav class="main-nav d-none d-lg-block mb-5 p-3 ml-sm-2">
+        <ul>
+            <li class="drop-down mr-sm-5"><a id="category">카테고리</a>
+                <ul>
+                    <li><a href="commission_list.html" target="_self">전체</a></li>
+                    <li><a href="#">디자인</a></li>
+                    <li><a href="#">IT개발</a></li>
+                    <li><a href="#">비즈니스문서</a></li>
+                    <li><a href="#">창작&작문</a></li>
+                    <li><a href="#">번역&통역</a></li>
+                    <li><a href="#">튜터링</a></li>
+                    <li><a href="#">기타</a></li>
+                </ul>
+            </li>
+            <li class="sch">
+                <input type="text" name="" class="mr-sm-1">
+                <button type="button" class="fa fa-search rounded-circle" style="color: #fff;"></button>
+            </li>
+            <li class="mr-sm-2" style="float: right"><a href="write_commission.html">재능 등록</a></li>
+        </ul>
+    </nav>
+
+    <!-- 글 1개 -->
+    <div class="container row rounded-lg p-4 form">
+
+        <!-- 썸네일 이미지 -->
+        <div class="col-3 selector">
+            <img src="img/bootstrap.jpg" class="rounded" alt="">
+        </div>
+
+        <!-- 제목 + 내용 -->
+        <div class="col-6 form-head">
+            <h1 class="mt-3 h1">부트스트랩 제목</h1>
+            <h4>내용(부트스트랩 어렵지만 어렵다)</h4>
+            <h1 class="position-absolute" style="bottom: 0;">10,000원</h1>
+        </div>
+
+        <!-- 작가 설명 -->
+        <div class="col-3">
+            <div class="container producer">
+                <!-- 작가 프로필 사진 -->
+                <div class="row selector pt-4" style="padding: 20%;">
+                    <img src="img/kong1.png" class="rounded-circle" alt="">
+                </div>
+
+                <!-- 작가 이름 -->
+                <div class="row">
+                    <h4 style="margin:0 auto;">콩이1작가</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 글 2개 -->
+    <div class="container row rounded-lg p-4 form">
+
+        <!-- 썸네일 이미지 -->
+        <div class="col-3 selector">
+            <img src="img/kong4.png" class="rounded" alt="">
+        </div>
+
+        <!-- 제목 + 내용 -->
+        <div class="col-6 form-head">
+            <h1 class="mt-3 h1">콩이4 제목</h1>
+            <h4>내용(form. 예림이언니의 마우스)</h4>
+            <h1 class="position-absolute" style="bottom: 0;">18,888원</h1>
+        </div>
+
+        <!-- 작가 설명 -->
+        <div class="col-3">
+            <div class="container producer">
+                <!-- 작가 프로필 사진 -->
+                <div class="row selector pt-4" style="padding: 20%;">
+                    <img src="img/kong2.png" class="rounded-circle" alt="">
+                </div>
+
+                <!-- 작가 이름 -->
+                <div class="row">
+                    <h4 style="margin:0 auto;">콩이2작가</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 글 3개 -->
+    <div class="container row rounded-lg p-4 form">
+
+        <!-- 썸네일 이미지 -->
+        <div class="col-3 selector">
+            <img src="img/kong3.png" class="rounded" alt="">
+        </div>
+
+        <!-- 제목 + 내용 -->
+        <div class="col-6 form-head">
+            <h1 class="mt-3 h1">콩이3 제목</h1>
+            <h4>내용~~~~~~~~~~~~~~~~~~~~~~</h4>
+            <h1 class="position-absolute" style="bottom: 0;">18,888원</h1>
+        </div>
+
+        <!-- 작가 설명 -->
+        <div class="col-3">
+            <div class="container producer">
+                <!-- 작가 프로필 사진 -->
+                <div class="row selector pt-4" style="padding: 20%;">
+                    <img src="img/kong5.png" class="rounded-circle" alt="">
+                </div>
+
+                <!-- 작가 이름 -->
+                <div class="row">
+                    <h4 style="margin:0 auto;">콩이5작가</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 글 4개 -->
+    <div class="container row rounded-lg p-4 form">
+
+        <!-- 썸네일 이미지 -->
+        <div class="col-3 selector">
+            <img src="img/kong3.png" class="rounded" alt="">
+        </div>
+
+        <!-- 제목 + 내용 -->
+        <div class="col-6 form-head">
+            <h1 class="mt-3 h1">콩이3 제목</h1>
+            <h4>내용~~~~~~~~~~~~~~~~~~~~~~</h4>
+            <h1 class="position-absolute" style="bottom: 0;">18,888원</h1>
+        </div>
+
+        <!-- 작가 설명 -->
+        <div class="col-3">
+            <div class="container producer">
+                <!-- 작가 프로필 사진 -->
+                <div class="row selector pt-4" style="padding: 20%;">
+                    <img src="img/kong5.png" class="rounded-circle" alt="">
+                </div>
+
+                <!-- 작가 이름 -->
+                <div class="row">
+                    <h4 style="margin:0 auto;">콩이5작가</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 글 5개 -->
+    <div class="container row rounded-lg p-4 form">
+
+        <!-- 썸네일 이미지 -->
+        <div class="col-3 selector">
+            <img src="img/kong3.png" class="rounded" alt="">
+        </div>
+
+        <!-- 제목 + 내용 -->
+        <div class="col-6 form-head">
+            <h1 class="mt-3 h1">콩이3 제목</h1>
+            <h4>내용~~~~~~~~~~~~~~~~~~~~~~</h4>
+            <h1 class="position-absolute" style="bottom: 0;">18,888원</h1>
+        </div>
+
+        <!-- 작가 설명 -->
+        <div class="col-3">
+            <div class="container producer">
+                <!-- 작가 프로필 사진 -->
+                <div class="row selector pt-4" style="padding: 20%;">
+                    <img src="img/kong5.png" class="rounded-circle" alt="">
+                </div>
+
+
+                <!-- 작가 이름 -->
+                <div class="row">
+                    <h4 style="margin:0 auto;">콩이5작가</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--    &lt;!&ndash; 나의 혼이 담긴 페이징. . . &ndash;&gt;-->
+    <!--    <div class="pagination p2 justify-content-center mt-5">-->
+    <!--        <ul>-->
+    <!--            <a href="#"><li> ❮ </li></a>-->
+    <!--            <a href="#" class="is-active"><li>1</li></a>-->
+    <!--            <a href="#"><li>2</li></a>-->
+    <!--            <a href="#"><li>3</li></a>-->
+    <!--            <a href="#"><li>4</li></a>-->
+    <!--            <a href="#"><li>5</li></a>-->
+    <!--            <a href="#"><li>6</li></a>-->
+    <!--            <a href="#"><li> ❯ </li></a>-->
+    <!--        </ul>-->
+    <!--    </div>-->
+
+</div>
+
+<script type="text/javascript">
+
+</script>
+
+<!--<script src="js/bootstrap.bundle.min.js"></script>-->
+<!--<script src="vendor/fontawesome-free/js/fontawesome.min.js"></script>-->
+</body>
+</html>
