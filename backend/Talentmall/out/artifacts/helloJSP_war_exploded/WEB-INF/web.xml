@@ -51,7 +51,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>TalentServlet</servlet-name>
-        <url-pattern>/talent/*</url-pattern>
+        <url-pattern>/*</url-pattern>
     </servlet-mapping>
 
 

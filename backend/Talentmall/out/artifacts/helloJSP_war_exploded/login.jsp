@@ -36,6 +36,7 @@ pageEncoding="UTF-8" %>
         <button type="submit" class="button buttonBlue rounded-pill">로그인
             <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
         </button>
+        <p>${message}</p>
     </form>
 </div>
 

@@ -21,19 +21,19 @@ pageEncoding="UTF-8" %>
 </hgroup>
 
 <div class="rounded">
-    <form class="form" action="post" target="_self">
+    <form class="form" action="join" method="post" target="_self">
         <!-- 생산자 & 소비자 선택 -->
 
         <div class="container group">
 
             <section class="section section--maa ml-sm-4">
                 <div class="toggle-button toggle-button--maa">
-                    <input id="producer" name="kind" type="radio">
+                    <input id="producer" name="role" type="radio" value="1">
                     <label for="producer" data-text="생산자"></label>
                     <div class="toggle-button__icon"></div>
                 </div>
                 <div class="toggle-button toggle-button--maa">
-                    <input id="consumer" name="kind" type="radio">
+                    <input id="consumer" name="role" type="radio" value="2">
                     <label for="consumer" data-text="소비자"></label>
                     <div class="toggle-button__icon"></div>
                 </div>
@@ -43,25 +43,25 @@ pageEncoding="UTF-8" %>
 
         <!-- 아이디 -->
         <div class="group">
-            <input type="text" class="input"><span class="highlight"></span><span class="bar"></span>
+            <input type="text" class="input" name="id"><span class="highlight"></span><span class="bar"></span>
             <label class="label">ID</label>
         </div>
 
         <!-- 비밀번호 -->
         <div class="group">
-            <input type="password" class="input"><span class="highlight"></span><span class="bar"></span>
+            <input type="password" class="input" name="pw"><span class="highlight"></span><span class="bar"></span>
             <label class="label">Password</label>
         </div>
 
         <!-- 이름 -->
         <div class="group">
-            <input type="text" class="input"><span class="highlight"></span><span class="bar"></span>
+            <input type="text" class="input" name="name"><span class="highlight"></span><span class="bar"></span>
             <label class="label">Name</label>
         </div>
 
         <!-- 전화번호 -->
         <div class="group">
-            <input type="text" class="input"><span class="highlight"></span><span class="bar"></span>
+            <input type="text" class="input" name="phone"><span class="highlight"></span><span class="bar"></span>
             <label class="label">Phone</label>
         </div>
 

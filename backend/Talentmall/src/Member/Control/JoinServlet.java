@@ -39,11 +39,12 @@ public class JoinServlet extends HttpServlet {
             request.setAttribute("message", "회원 가입에 실패했습니다.");
         }
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("mainPage.jsp");
         dispatcher.forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        RequestDispatcher dispatcher = request.getRequestDispatcher("signup.jsp");
+        dispatcher.forward(request, response);
     }
 }
