@@ -56,10 +56,15 @@
                     <li><a href="#">주문관리</a></li>
                     <li><a href="#">수탁자 신청 목록/의뢰 수탁자 목록</a></li>
                     <li><a href="#">문의 및 답변</a></li>
-                    <li><a href="./logout.jsp">로그아웃</a></li>
                 </ul>
             </li>
 
+            <li><a href="#">${loginUser.name} 님</a>
+                <ul>
+                    <li><a href="./join">회원정보 수정</a></li>
+                    <li><a href="./logout.jsp">로그아웃</a></li>
+                </ul>
+            </li>
 
         </ul>
     </div>

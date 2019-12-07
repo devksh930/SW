@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8" %>
 <!DOCTYPE html>
@@ -21,6 +22,7 @@ pageEncoding="UTF-8" %>
 </hgroup>
 
 <div class="rounded">
+   <c:if test="${loginUser eq null}">
     <form class="form" action="join" method="post" target="_self">
         <!-- 생산자 & 소비자 선택 -->
 
@@ -64,12 +66,43 @@ pageEncoding="UTF-8" %>
             <input type="text" class="input" name="phone"><span class="highlight"></span><span class="bar"></span>
             <label class="label">Phone</label>
         </div>
-
+        <p>${message}</p>
         <!-- 회원가입 버튼 -->
         <button type="submit" class="button buttonBlue2 rounded-pill">회원가입
             <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
         </button>
     </form>
+   </c:if>
+    <c:if test="${loginUser ne null}">
+        <div class="group">
+            <input type="text" class="input" name="id" value="${loginUser.id}"><span class="highlight"></span><span class="bar"></span>
+            <label class="label">ID</label>
+        </div>
+
+        <!-- 비밀번호 -->
+        <div class="group">
+            <input type="password" class="input" name="pw" value="${loginUser.pw}"><span class="highlight"></span><span class="bar"></span>
+            <label class="label">Password</label>
+        </div>
+
+        <!-- 이름 -->
+        <div class="group">
+            <input type="text" class="input" name="name" value="${loginUser.name}"><span class="highlight"></span><span class="bar"></span>
+            <label class="label">Name</label>
+        </div>
+
+        <!-- 전화번호 -->
+        <div class="group">
+            <input type="text" class="input" name="phone" value="${loginUser.phone}"><span class="highlight"></span><span class="bar"></span>
+            <label class="label">Phone</label>
+        </div>
+
+        <!-- 회원가입 버튼 -->
+        <button type="submit" class="button buttonBlue2 rounded-pill">회원정보수정
+            <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+        </button>
+        </form>
+    </c:if>
 </div>
 
 </body>

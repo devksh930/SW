@@ -8,10 +8,10 @@
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <c:if test="${loginUser eq null}">
-    <jsp:include page="./logoutHeader.jsp" flush="true"/>
+    <jsp:include page="logoutHeader.jsp" flush="true"/>
 </c:if>
 <c:if test="${loginUser ne null}">
-    <jsp:include page="./loginHeader.jsp" flush="true"/>
+    <jsp:include page="loginHeader.jsp" flush="true"/>
 </c:if>
 <html lang="en">
 <head>
