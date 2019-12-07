@@ -5,12 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <title>재능상점</title>
-    <link rel="stylesheet" href="./css/bootstrap3.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/sectionStyle.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="mt-body">
 <div class="size">
     <div class="intro_st font">
         <h3 style="text-align: center; margin-top: 13px;">사이트 소개</h3>
@@ -19,7 +19,6 @@
             <br>
             시들어 가는 노년에게서 구하지 못할 바이며 오직 우리 청춘에서만 구할 수 있는 것이다 청춘은 인생의 황금시대다
             <br> 우리는 이 황금시대의 가치를 충분히 발휘하기 위하여 이 황금시대를 영원히 붙잡아 두기
-            <br> 위하여 힘차게 노래하며 힘차게 발휘하기 위하여 이 황금시대를 발휘하기 위하여 이 황금시대를
         </p>
     </div>
 
@@ -34,16 +33,16 @@
 
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="./images/car1.png" alt="First slide">
+                    <img src="img/car1.png" alt="First slide">
                     <!-- alt : 이미지가 보이지 않을 때 대체 텍스트 -->
                 </div>
 
                 <div class="item">
-                    <img src="./images/car2.png" alt="Second slide">
+                    <img src="img/car2.png" alt="Second slide">
                 </div>
 
                 <div class="item">
-                    <img src="./images/car3.png" alt="Third slide">
+                    <img src="img/car3.png" alt="Third slide">
                 </div>
             </div>
 
