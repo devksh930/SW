@@ -6,85 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b152c75-ecd0-48ed-b222-1e2cb288a4b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.idea/SW.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/commission_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/commission_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/css/bootstrap3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/css/headerStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/css/headerStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/css/sectionStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/css/sectionStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/fonts/kim.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/images/01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/images/02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/images/03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/images/04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/images/05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/images/07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/images/09.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/images/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/images/car1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/images/car2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/images/car3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/images/title.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/loginHeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/loginHeader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/logoutHeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/logoutHeader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/section.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/section.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/write_commission.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/out/artifacts/helloJSP_war_exploded/write_commission.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/commission_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/commission_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-bomi.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-bomi.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-bomi.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-bomi.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap-theme.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/bootstrap3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/headerStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/css/headerStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/css/sectionStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/css/sectionStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/fonts/kim.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/font-awesome/fonts/kim.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/images/01.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/img/01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/images/02.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/img/02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/images/03.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/img/03.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/images/04.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/img/04.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/images/05.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/img/05.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/images/07.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/img/07.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/images/09.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/img/09.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/images/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/img/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/images/car1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/img/car1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/images/car2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/img/car2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/images/car3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/img/car3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/images/title.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/img/title.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/loginHeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/loginHeader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/logoutHeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/logoutHeader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/section.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/section.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../backend/Talentmall/web/write_commission.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/Talentmall/web/write_commission.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4b152c75-ecd0-48ed-b222-1e2cb288a4b1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -294,6 +216,7 @@
       <workItem from="1575626611735" duration="1673000" />
       <workItem from="1575628483705" duration="225000" />
       <workItem from="1575638690258" duration="1755000" />
+      <workItem from="1575698326890" duration="3000" />
     </task>
     <servers />
   </component>

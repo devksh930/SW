@@ -12,7 +12,7 @@
 
 <body>
 <div class="fixed-top">
-    <div class="logo">
+    <div class="logo" style="height: 120px; padding-top: 15px">
         <a href="./mainPage.jsp" style="color: #000; text-decoration: none;">
             <h1 class="font_st">재능상점</h1>
             <h5 class="font_st" style="font-weight: bold">자신의 재능을 판매하고 다양한 재능을 구매하세요!</h5>
