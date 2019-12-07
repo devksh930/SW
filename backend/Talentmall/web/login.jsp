@@ -25,12 +25,12 @@ pageEncoding="UTF-8" %>
 <div class="rounded">
     <form class="form" action="login" target="_self" method="post">
         <div class="group">
-            <input type="text" name="id"><span class="highlight"></span><span class="bar"></span>
-            <label>ID</label>
+            <input type="text" name="id" placeholder="ID"><span class="highlight"></span><span class="bar"></span>
+<%--            <label>ID</label>--%>
         </div>
         <div class="group">
-            <input type="password" name="pw"><span class="highlight"></span><span class="bar"></span>
-            <label>Password</label>
+            <input type="password" name="pw" placeholder="Password"><span class="highlight"></span><span class="bar"></span>
+<%--            <label>Password</label>--%>
         </div>
 
         <button type="submit" class="button buttonBlue rounded-pill">로그인
