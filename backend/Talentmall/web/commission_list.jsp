@@ -51,49 +51,55 @@
                 <button type="button" class="fa fa-search rounded-circle" style="color: #fff;"></button>
             </li>
             <c:if test="${loginUser.kind eq '생산자'}">
-            <li class="mr-sm-2" style="float: right"><a href="/talentinsert">재능 등록</a></li>
+                <li class="mr-sm-2" style="float: right"><a href="/talentinsert">재능 등록</a></li>
             </c:if>
         </ul>
     </nav>
 
 
-
     <c:forEach var="list" items="${talentlist}">
 
-    <div class="container row rounded-lg p-4 form">
+        <div class="container row rounded-lg p-2 form">
 
-        <!-- 썸네일 이미지 -->
-        <div class="col-3 selector">
-            <img src="../../img/bootstrap.jpg" class="rounded" alt="" style="position: relative;">
-        </div>
+            <!-- 썸네일 이미지 -->
+            <div class="col-3 selector">
+                <img src="../../img/bootstrap.jpg" class="rounded" alt="" style="position: relative;">
+            </div>
 
-        <!-- 제목 + 내용 -->
-        <div class="col-6 form-head">
-            <h1 class="mt-3 h1"><c:out value="${list.title}"/></h1>
-            <h4><c:out value="${list.contents}"/></h4>
-            <h1 class="position-absolute" style="bottom: 0;">10,000원</h1>
-        </div>
+            <!-- 제목 + 내용 -->
+            <div class="col-6 form-head">
+                <h1 class="mt-3 h1"><c:out value="${list.title}"/></h1>
+                <h4><c:out value="${list.contents}"/></h4>
+                <h1 class="position-absolute" style="bottom: 0;">10,000원</h1>
+            </div>
 
-        <!-- 작가 설명 -->
-        <div class="col-3">
-            <div class="container producer">
-                <!-- 작가 프로필 사진 -->
-                <div class="row selector pt-4" style="padding: 20%;">
-                    <img src="../../img/kong1.png" class="rounded-circle" alt="">
-                </div>
+            <!-- 작가 설명 -->
+            <div class="col-3">
+                <div class="container producer">
+                    <!-- 작가 프로필 사진 -->
+                    <div class="row selector pt-4" style="padding: 20%;">
+                        <img src="../../img/kong1.png" class="rounded-circle" alt="">
+                    </div>
 
-                <!-- 작가 이름 -->
-                <div class="row">
-                    <h4 style="margin:0 auto;"><c:out value="${list.member_id}"/></h4>
+                    <!-- 작가 이름 -->
+                    <div class="row">
+                        <h4 style="margin:0 auto;"><c:out value="${list.member_id}"/></h4>
+                    </div>
                 </div>
             </div>
+
         </div>
 
-    </div>
+        <button type="button" class="ml-5 mr-3 mb-3" style="position: relative; display: inline-block; padding: 12px 24px; margin: .3em 0 1em 0; width: 80px; vertical-align: middle; color: #fff; font-size: 15px; line-height: 17px; -webkit-font-smoothing: antialiased; text-align: center; letter-spacing: 1px; background-color: #9d7566; border: 0; border-bottom: 2px solid #88472F; cursor: pointer; transition: all 0.15s ease; border-radius: 50rem;">
+            수정
+        </button>
+        <button type="button" class="mb-3" style="position: relative; display: inline-block; padding: 12px 24px; margin: .3em 0 1em 0; width: 80px; vertical-align: middle; color: #fff; font-size: 15px; line-height: 17px; -webkit-font-smoothing: antialiased; text-align: center; letter-spacing: 1px; background-color: #9d7566; border: 0; border-bottom: 2px solid #88472F; cursor: pointer; transition: all 0.15s ease; border-radius: 50rem;">
+            삭제
+        </button>
     </c:forEach>
 
 
-    <!--    &lt;!&ndash; 나의 혼이 담긴 페이징. . . &ndash;&gt;-->
+    <!--   &lt;!&ndash; 나의 혼이 담긴 페이징. . . &ndash;&gt;-->
     <!--    <div class="pagination p2 justify-content-center mt-5">-->
     <!--        <ul>-->
     <!--            <a href="#"><li> ❮ </li></a>-->
