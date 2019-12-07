@@ -17,12 +17,13 @@ pageEncoding="UTF-8" %>
 </head>
 <body>
 
-<hgroup>
-    <h1>회원가입</h1>
-</hgroup>
 
-<div class="rounded">
    <c:if test="${loginUser eq null}">
+       <hgroup>
+           <h1>회원가입</h1>
+       </hgroup>
+
+       <div class="rounded">
     <form class="form" action="join" method="post" target="_self">
         <!-- 생산자 & 소비자 선택 -->
 
@@ -74,31 +75,42 @@ pageEncoding="UTF-8" %>
     </form>
    </c:if>
     <c:if test="${loginUser ne null}">
-        <div class="group">
-            <input type="text" class="input" name="id" value="${loginUser.id}"><span class="highlight"></span><span class="bar"></span>
-            <label class="label">ID</label>
+           <hgroup>
+               <h1>회원정보수정</h1>
+           </hgroup>
+
+           <div class="rounded">
+               <form class="form" action="/updatemember" method="post" target="_self">
+
+           <div class="group">
+            <p>ID</p>
+            <input type="text" class="input" name="id" value="${loginUser.id}" readonly="readonly"/><span class="highlight"/><span class="bar"></span>
+            <label class="label"></label>
         </div>
 
         <!-- 비밀번호 -->
         <div class="group">
-            <input type="password" class="input" name="pw" value="${loginUser.pw}"><span class="highlight"></span><span class="bar"></span>
-            <label class="label">Password</label>
+            <p>PW</p>
+            <input type="password" class="input" name="pw" value="${loginUser.pw}"/><span class="highlight"></span><span class="bar"></span>
+            <label class="label"></label>
         </div>
 
         <!-- 이름 -->
         <div class="group">
-            <input type="text" class="input" name="name" value="${loginUser.name}"><span class="highlight"></span><span class="bar"></span>
-            <label class="label">Name</label>
+            <p>name</p>
+            <input type="text" class="input" name="name" value="${loginUser.name}" readonly="readonly"/><span class="highlight"></span><span class="bar"></span>
+            <label class="label"></label>
         </div>
 
         <!-- 전화번호 -->
         <div class="group">
-            <input type="text" class="input" name="phone" value="${loginUser.phone}"><span class="highlight"></span><span class="bar"></span>
-            <label class="label">Phone</label>
+            <p>phone</p>
+            <input type="text" class="input" name="phone" value="${loginUser.phone}"/><span class="highlight"></span><span class="bar"></span>
+            <label class="label"></label>
         </div>
 
         <!-- 회원가입 버튼 -->
-        <button type="submit" class="button buttonBlue2 rounded-pill">회원정보수정
+                   <button type="submit" class="button buttonBlue2 rounded-pill">회원정보수정
             <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
         </button>
         </form>

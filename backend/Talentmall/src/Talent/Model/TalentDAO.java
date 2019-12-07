@@ -63,6 +63,34 @@ public class TalentDAO {
 
         return list;
     }
+    public int talentInsert(String category,String title, String id, String content){
+        int result = -1;
+        String sql ="INSERT INTO talents (title, contents,end_date, member_id,category_idx) VALUES (?, ?, CURRENT_TIMESTAMP + INTERVAL '7' DAY, ?,?)";
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        try{
+            conn = DBManager.connect();
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1,title);
+            pstmt.setString(2,content);
+            pstmt.setString(3,id);
+            pstmt.setString(4,category);
+
+            result = pstmt.executeUpdate();
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            try {
+                if (pstmt != null)
+                    pstmt.close();
+                if (conn != null)
+                    conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return result;
+    }
 
 
     public ArrayList<TalentBean> getCategoryList(String idx) {

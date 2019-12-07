@@ -13,7 +13,7 @@
 <body>
 <div class="fixed-top">
     <div class="logo" style="height: 120px; padding-top: 15px">
-        <a href="./mainPage.jsp" style="color: #000; text-decoration: none;">
+        <a href="../mainPage.jsp" style="color: #000; text-decoration: none;">
             <h1 class="font_st">재능상점</h1>
             <h5 class="font_st" style="font-weight: bold">자신의 재능을 판매하고 다양한 재능을 구매하세요!</h5>
         </a>
@@ -22,14 +22,14 @@
         <ul>
             <li><a href="#">홍보게시판</a>
                 <ul>
-                    <li><a href="/talent/all">전체</a></li>
-                    <li><a href="/talent/design">디자인</a></li>
-                    <li><a href="/talent/it">IT개발</a></li>
-                    <li><a href="/talent/business">비지니스문서</a></li>
-                    <li><a href="/talent/text">창작&작문</a></li>
-                    <li><a href="/talent/trans">번역&통역</a></li>
-                    <li><a href="/talent/tutor">튜터링</a></li>
-                    <li><a href="/talent/etc">기타</a></li>
+                    <li><a href="../talent/all">전체</a></li>
+                    <li><a href="../talent/design">디자인</a></li>
+                    <li><a href="../talent/it">IT개발</a></li>
+                    <li><a href="../talent/business">비지니스문서</a></li>
+                    <li><a href="../talent/text">창작&작문</a></li>
+                    <li><a href="../talent/trans">번역&통역</a></li>
+                    <li><a href="../talent/tutor">튜터링</a></li>
+                    <li><a href="../talent/etc">기타</a></li>
                 </ul>
             </li>
 
@@ -59,15 +59,16 @@
                 </ul>
             </li>
 
-            <li><a href="#">${loginUser.name} 님</a>
+            <li style="width: 200px;"><a href="#">${loginUser.kind}&nbsp;${loginUser.name} 님</a>
                 <ul>
-                    <li><a href="./join">회원정보 수정</a></li>
-                    <li><a href="./logout.jsp">로그아웃</a></li>
+                    <li><a href="../join">회원정보 수정</a></li>
+                    <li><a href="../logout.jsp">로그아웃</a></li>
                 </ul>
             </li>
 
         </ul>
     </div>
-</div>x
+</div>
+
 </body>
 </html>

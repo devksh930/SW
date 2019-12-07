@@ -73,7 +73,10 @@ public class LoginServlet extends HttpServlet {
             url = "mainPage.jsp";
         }
 
+
         RequestDispatcher dispatcher = request.getRequestDispatcher(url);
         dispatcher.forward(request, response);
+
+
     }
 }

@@ -50,7 +50,9 @@
                 <input type="text" name="" class="mr-sm-1"/>
                 <button type="button" class="fa fa-search rounded-circle" style="color: #fff;"></button>
             </li>
-            <li class="mr-sm-2" style="float: right"><a href="/write_commission.html">재능 등록</a></li>
+            <c:if test="${loginUser.kind eq '생산자'}">
+            <li class="mr-sm-2" style="float: right"><a href="/talentinsert">재능 등록</a></li>
+            </c:if>
         </ul>
     </nav>
 

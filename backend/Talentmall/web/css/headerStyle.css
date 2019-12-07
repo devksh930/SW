@@ -39,7 +39,7 @@ img {
 .menubar li{
     display:inline-block;  // 우측정렬
     padding:0px;
-    width:130px
+    width:150px
 }
 
 .menubar li a{

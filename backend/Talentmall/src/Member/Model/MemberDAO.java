@@ -134,6 +134,41 @@ public class MemberDAO extends DBManager {
         }
         return result;
     }
+
+    public int memberUpdate(String userid, String userpw, String username, String userphone){
+        int result = -1;
+        String sql ="UPDATE members SET pw=?,name=?,phone=? where id = ? ";
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+    try {
+        System.out.println(userid);
+        System.out.println(userpw);
+        System.out.println(username);
+        System.out.println(userphone);
+
+        conn = DBManager.connect();
+        pstmt = conn.prepareStatement(sql);
+        pstmt.setString(1, userpw);
+        pstmt.setString(2, username);
+        pstmt.setString(3, userphone);
+        pstmt.setString(4, userid);
+        result= pstmt.executeUpdate();
+    }
+    catch (Exception e){
+        e.printStackTrace();
+    }finally {
+        try {
+            if (pstmt != null)
+                pstmt.close();
+            if (conn != null)
+                conn.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+        return result;
+    }
 }
 
 
