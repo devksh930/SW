@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <title>재능상점</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/headerStyle.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/headerStyle.css">
 </head>
 
 <body>
 <div class="fixed-top">
     <div class="logo">
-        <a href="mainPage.jsp" style="color: #000; text-decoration: none;">
+        <a href="./mainPage.jsp" style="color: #000; text-decoration: none;">
             <h1 class="font_st">재능상점</h1>
             <h5 class="font_st" style="font-weight: bold">자신의 재능을 판매하고 다양한 재능을 구매하세요!</h5>
         </a>

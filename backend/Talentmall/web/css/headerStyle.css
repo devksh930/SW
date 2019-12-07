@@ -7,7 +7,7 @@ img {
 
 @font-face {
     font-family: kim;
-    src: url("../fonts/kim.ttf");
+    src: url("../font-awesome/fonts/kim.ttf");
 }
 
 .font_st
@@ -20,7 +20,7 @@ img {
     text-align: center;
     background: #FFFFFF;
     height: 120px;
-    padding-top: 5px
+    padding-top: 15px;
 }
 
 .menubar{
