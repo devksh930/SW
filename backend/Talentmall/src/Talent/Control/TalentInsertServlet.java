@@ -36,7 +36,7 @@ public class TalentInsertServlet extends HttpServlet {
         System.out.println(id);
         System.out.println(content);
         TalentDAO talentDAO = TalentDAO.getInstance();
-        int result = talentDAO.talentInsert(category,title,id,content);
+        int result = talentDAO.talentInsert(category, title, id, content);
         if (result == 1) {
             request.setAttribute("message", "재능 등록에 성공했습니다.");
         } else {
@@ -44,7 +44,7 @@ public class TalentInsertServlet extends HttpServlet {
         }
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("./talent/all");
-        dispatcher.forward(request,response);
+        dispatcher.forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -52,10 +52,10 @@ public class TalentInsertServlet extends HttpServlet {
         CategoryDAO categoryDAO = CategoryDAO.getInstance();
         List<CategoryBean> categoryList = categoryDAO.getsection();
 
-        request.setAttribute("categoryList",categoryList);
+        request.setAttribute("categoryList", categoryList);
 
         RequestDispatcher rd = request.getRequestDispatcher("write_commission.jsp");
 
-        rd.forward(request,response);
+        rd.forward(request, response);
     }
 }

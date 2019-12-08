@@ -27,6 +27,7 @@ public class CategoryServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //Category parameter control
         CategoryDAO categoryDAO = CategoryDAO.getInstance();
         List<CategoryBean> sectionlist=categoryDAO.getsection();
 
