@@ -68,7 +68,7 @@
 
             <!-- 제목 + 내용 -->
             <div class="col-6 form-head">
-                <h1 class="mt-3 h1"><c:out value="${list.title}"/></h1>
+                <h1 class="mt-3 h1"> <a href="../login?idx=${list.idx}"><c:out value="${list.title}"/></a></h1>
                 <h4><c:out value="${list.contents}"/></h4>
                 <h1 class="position-absolute" style="bottom: 0;">10,000원</h1>
             </div>
@@ -89,29 +89,18 @@
             </div>
 
         </div>
-
-        <button type="button" class="ml-5 mr-3" style="position: relative; display: inline-block; padding: 12px 24px; margin: .3em 0 1em 0; width: 80px; vertical-align: middle; color: #fff; font-size: 15px; line-height: 17px; -webkit-font-smoothing: antialiased; text-align: center; letter-spacing: 1px; background-color: #9d7566; border: 0; border-bottom: 2px solid #88472F; cursor: pointer; transition: all 0.15s ease; border-radius: 50rem;">
+        <c:if test="${list.member_id eq loginUser.id || list.member_id eq 'admin'}">
+        <button type="button" class="ml-5 mr-3 mb-3"
+                style="position: relative; display: inline-block; padding: 12px 24px; margin: .3em 0 1em 0; width: 80px; vertical-align: middle; color: #fff; font-size: 15px; line-height: 17px; -webkit-font-smoothing: antialiased; text-align: center; letter-spacing: 1px; background-color: #9d7566; border: 0; border-bottom: 2px solid #88472F; cursor: pointer; transition: all 0.15s ease; border-radius: 50rem;">
             수정
         </button>
-        <button type="button" class="mb-3" style="position: relative; display: inline-block; padding: 12px 24px; margin: .3em 0 1em 0; width: 80px; vertical-align: middle; color: #fff; font-size: 15px; line-height: 17px; -webkit-font-smoothing: antialiased; text-align: center; letter-spacing: 1px; background-color: #9d7566; border: 0; border-bottom: 2px solid #88472F; cursor: pointer; transition: all 0.15s ease; border-radius: 50rem;">
+        <button type="button" class="mb-3"
+                style="position: relative; display: inline-block; padding: 12px 24px; margin: .3em 0 1em 0; width: 80px; vertical-align: middle; color: #fff; font-size: 15px; line-height: 17px; -webkit-font-smoothing: antialiased; text-align: center; letter-spacing: 1px; background-color: #9d7566; border: 0; border-bottom: 2px solid #88472F; cursor: pointer; transition: all 0.15s ease; border-radius: 50rem;">
             삭제
         </button>
+        </c:if>
     </c:forEach>
 
-
-    <!--   &lt;!&ndash; 나의 혼이 담긴 페이징. . . &ndash;&gt;-->
-    <!--    <div class="pagination p2 justify-content-center mt-5">-->
-    <!--        <ul>-->
-    <!--            <a href="#"><li> ❮ </li></a>-->
-    <!--            <a href="#" class="is-active"><li>1</li></a>-->
-    <!--            <a href="#"><li>2</li></a>-->
-    <!--            <a href="#"><li>3</li></a>-->
-    <!--            <a href="#"><li>4</li></a>-->
-    <!--            <a href="#"><li>5</li></a>-->
-    <!--            <a href="#"><li>6</li></a>-->
-    <!--            <a href="#"><li> ❯ </li></a>-->
-    <!--        </ul>-->
-    <!--    </div>-->
 
 </div>
 
