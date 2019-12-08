@@ -1,3 +1,11 @@
+/*
+        Created by IntelliJ IDEA.
+        User: devksh930
+        Date: 2019/11/12
+        Info: commission list
+        Time: 9:02 오전
+        To change this template use File | Settings | File Templates.
+        */
 package Category.Model;
 
 public class CategoryBean {

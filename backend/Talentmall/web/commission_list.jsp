@@ -3,6 +3,7 @@
   Created by IntelliJ IDEA.
   User: devksh930
   Date: 2019/11/12
+  Info: commission list
   Time: 9:02 오전
   To change this template use File | Settings | File Templates.
 --%>
@@ -90,11 +91,11 @@
 
         </div>
         <c:if test="${list.member_id eq loginUser.id || list.member_id eq 'admin'}">
-        <button type="button" class="ml-5 mr-3 mb-3"
+        <button type="button" class="ml-5 mr-3 mb-3"   onclick="location.href='../talentupdate?idx=${list.idx}'"
                 style="position: relative; display: inline-block; padding: 12px 24px; margin: .3em 0 1em 0; width: 80px; vertical-align: middle; color: #fff; font-size: 15px; line-height: 17px; -webkit-font-smoothing: antialiased; text-align: center; letter-spacing: 1px; background-color: #9d7566; border: 0; border-bottom: 2px solid #88472F; cursor: pointer; transition: all 0.15s ease; border-radius: 50rem;">
             수정
         </button>
-        <button type="button" class="mb-3"
+        <button type="button" class="mb-3" onclick="location.href='../talentdel?idx=${list.idx}'"
                 style="position: relative; display: inline-block; padding: 12px 24px; margin: .3em 0 1em 0; width: 80px; vertical-align: middle; color: #fff; font-size: 15px; line-height: 17px; -webkit-font-smoothing: antialiased; text-align: center; letter-spacing: 1px; background-color: #9d7566; border: 0; border-bottom: 2px solid #88472F; cursor: pointer; transition: all 0.15s ease; border-radius: 50rem;">
             삭제
         </button>

@@ -26,6 +26,14 @@
         <load-on-startup>100</load-on-startup>
     </servlet>
 
+    <servlet>
+        <servlet-name>TalentUpdateServlet</servlet-name>
+        <servlet-class>Talent.Control.TalentUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TalentUpdateServlet</servlet-name>
+        <url-pattern>/talentupdate</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
@@ -62,7 +70,14 @@
         <servlet-name>TalentServlet</servlet-name>
         <url-pattern>/talent/*</url-pattern>
     </servlet-mapping>
-
+    <servlet>
+        <servlet-name>TalentDelServlet</servlet-name>
+        <servlet-class>Talent.Control.TalentDelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TalentDelServlet</servlet-name>
+        <url-pattern>/talentdel</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <servlet-name>CategoryServlet</servlet-name>
@@ -80,6 +95,15 @@
     <servlet-mapping>
         <servlet-name>TalentInsertServlet</servlet-name>
         <url-pattern>/talentinsert</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TalentdetailServlet</servlet-name>
+        <servlet-class>Talent.Control.TalentdetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TalentdetailServlet</servlet-name>
+        <url-pattern>/detailview</url-pattern>
     </servlet-mapping>
 
 

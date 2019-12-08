@@ -1,3 +1,12 @@
+/*
+        Created by IntelliJ IDEA.
+        User: devksh930
+        Date: 2019/11/20
+        Info: DATBASE CONNECTION, CLOSE OBJECT
+        version: CURRENT VERSION 3.0.0   make AZURE MYSQL SERVER PATH        ||  1.0.0 make class -> connect local DB  || 1.5.0 make connect || 2.0.0  make close
+        Time: 01:02 오전
+        To change this template use File | Settings | File Templates.
+        */
 package DBconf;
 
 import java.sql.*;
@@ -14,10 +23,10 @@ public class DBManager {
 
     public static void main(String[] args) {
         // Connection
-        connect();
+        //connect();
 
         // Close
-        close();
+        //close();
     }
 
     public static Connection connect()

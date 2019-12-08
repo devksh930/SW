@@ -24,9 +24,9 @@
 
 </head>
 <body>
-<h2 class="mt-5 mb-5" style="text-align: center;">재능 등록</h2>
+<h2 class="mt-5 mb-5" style="text-align: center;">재능 수정 </h2>
 
-<form action="/talentinsert" method="post" target="_self">
+<form action="../talentupdate" method="post" target="_self">
     <div class="container mt-5 mb-5 col-6 form">
 
         <table class="table table-hover">
@@ -56,9 +56,15 @@
 
             <!-- 제목 -->
             <tr>
+                <td>글번호</td>
+                <td>
+                    <input type="text" class="form-control" placeholder="제목 입력" name="idx" value="${detailview.idx}" readonly="readonly">
+                </td>
+            </tr>
+            <tr>
                 <td>제목</td>
                 <td>
-                    <input type="text" class="form-control" placeholder="제목 입력" name="title">
+                    <input type="text" class="form-control" placeholder="제목 입력" name="title" value="${detailview.title}">
                 </td>
             </tr>
             <tr>
@@ -71,7 +77,7 @@
             <tr>
                 <td style="border-bottom: none;">내용</td>
                 <td style="border-bottom: none;">
-                    <textarea class="form-control" rows="15" placeholder="내용 입력" name=content></textarea>
+                    <textarea class="form-control" rows="15" placeholder="내용 입력" name=content >${detailview.contents}</textarea>
                 </td>
             </tr>
 

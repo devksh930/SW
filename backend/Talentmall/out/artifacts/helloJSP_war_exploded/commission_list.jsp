@@ -68,7 +68,7 @@
 
             <!-- 제목 + 내용 -->
             <div class="col-6 form-head">
-                <h1 class="mt-3 h1"> <a href="../login?idx=${list.idx}"><c:out value="${list.title}"/></a></h1>
+                <h1 class="mt-3 h1"> <a href="../detailview?idx=${list.idx}"><c:out value="${list.title}"/></a></h1>
                 <h4><c:out value="${list.contents}"/></h4>
                 <h1 class="position-absolute" style="bottom: 0;">10,000원</h1>
             </div>
@@ -89,17 +89,12 @@
             </div>
 
         </div>
-<<<<<<< HEAD
-
-        <button type="button" class="ml-5 mr-3 mb-3" style="position: relative; display: inline-block; padding: 12px 24px; margin: .3em 0 1em 0; width: 80px; vertical-align: middle; color: #fff; font-size: 15px; line-height: 17px; -webkit-font-smoothing: antialiased; text-align: center; letter-spacing: 1px; background-color: #9d7566; border: 0; border-bottom: 2px solid #88472F; cursor: pointer; transition: all 0.15s ease; border-radius: 50rem;">
-=======
         <c:if test="${list.member_id eq loginUser.id || list.member_id eq 'admin'}">
-        <button type="button" class="ml-5 mr-3 mb-3"
+        <button type="button" class="ml-5 mr-3 mb-3"   onclick="location.href='../talentupdate?idx=${list.idx}'"
                 style="position: relative; display: inline-block; padding: 12px 24px; margin: .3em 0 1em 0; width: 80px; vertical-align: middle; color: #fff; font-size: 15px; line-height: 17px; -webkit-font-smoothing: antialiased; text-align: center; letter-spacing: 1px; background-color: #9d7566; border: 0; border-bottom: 2px solid #88472F; cursor: pointer; transition: all 0.15s ease; border-radius: 50rem;">
->>>>>>> 5ba31deca3ff157109a28cbc03573c99d30e4097
             수정
         </button>
-        <button type="button" class="mb-3"
+        <button type="button" class="mb-3" onclick="location.href='../talentdel?idx=${list.idx}'"
                 style="position: relative; display: inline-block; padding: 12px 24px; margin: .3em 0 1em 0; width: 80px; vertical-align: middle; color: #fff; font-size: 15px; line-height: 17px; -webkit-font-smoothing: antialiased; text-align: center; letter-spacing: 1px; background-color: #9d7566; border: 0; border-bottom: 2px solid #88472F; cursor: pointer; transition: all 0.15s ease; border-radius: 50rem;">
             삭제
         </button>
