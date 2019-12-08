@@ -4,6 +4,7 @@
         Date: 2019/11/12
         Info: Talent DTO (BEAN)
         Time: 9:02 오전
+        Class:TalentBean
         To change this template use File | Settings | File Templates.
         */
 package Talent.Model;

@@ -5,6 +5,7 @@
         Info: Category PARAMETER CONTROL SERVLET
         Time: 11:42 오전
         version: 1.0.0
+        Class: CategoryServlet
         To change this template use File | Settings | File Templates.
         */
 package Category.Control;

@@ -4,6 +4,7 @@
         Date: 2019/12/01
         Info: TalentDel parameter Control Servlet
         Time: 12:21 오전
+        Class: TalentDelServlet
         To change this template use File | Settings | File Templates.
         */
 package Talent.Control;

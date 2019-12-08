@@ -4,6 +4,7 @@
         Date: 2019/11/28
         Info: Member Update parameter control servlet
         Time: 9:02 오전
+        Class: UpdateServlet
         To change this template use File | Settings | File Templates.
         */
 package Member.Control;

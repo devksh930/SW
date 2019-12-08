@@ -4,6 +4,7 @@
         Date: 2019/11/28
         Info: MEMBER JOIN parameter control servlet
         Time: 9:02 오전
+        Class:JoinServlet
         To change this template use File | Settings | File Templates.
         */
 package Member.Control;

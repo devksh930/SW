@@ -4,6 +4,7 @@
         Date: 2019/12/02
         Info: Talent Update parameter Control Servlet
         Time: 20:12 오전
+        Class:TalentUpdateServlet
         To change this template use File | Settings | File Templates.
         */
 package Talent.Control;

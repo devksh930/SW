@@ -4,6 +4,7 @@
         Date: 2019/11/29
         Info: commission list
         Time: 9:02 오전
+        Class:CategoryDAO
         To change this template use File | Settings | File Templates.
         */
 package Category.Model;

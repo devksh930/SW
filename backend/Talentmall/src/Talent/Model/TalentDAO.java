@@ -4,6 +4,7 @@
         Date: 2019/12/4
         Info: USE TalentBean DATA access object
         Time: 9:02 오전
+        Class: TalentDAO
         To change this template use File | Settings | File Templates.
         */
 package Talent.Model;

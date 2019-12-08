@@ -4,6 +4,7 @@
         Date: 2019/11/12
         Info: commission DTO(BEAN)
         Time: 9:02 오전
+        Class:CommissionBean
         To change this template use File | Settings | File Templates.
         */
 package example;

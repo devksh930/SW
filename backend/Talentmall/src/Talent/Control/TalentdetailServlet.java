@@ -4,6 +4,7 @@
         Date: 2019/12/01
         Info: Talente Detailview Parameter Control Servlet
         Time: 21:02 오후
+        Class: TalentdetailServlet
         To change this template use File | Settings | File Templates.
         */
 package Talent.Control;

@@ -4,6 +4,7 @@
         Date: 2019/11/12
         Info: member DTO(BEAN)
         Time: 9:02 오전
+        Class:MemberBean
         To change this template use File | Settings | File Templates.
         */
 package Member.Model;

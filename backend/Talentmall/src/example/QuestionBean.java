@@ -5,6 +5,7 @@
         Info: Question DTO(bean)
         version: 1.0.0
         Time: 9:02 오전
+        Class:QuestionBean
         To change this template use File | Settings | File Templates.
         */
 package example;

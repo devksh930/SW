@@ -4,6 +4,7 @@
         Date: 2019/11/12
         Info: order DTO(bean)
         Time: 9:02 오전
+        Class:OrderBean
         To change this template use File | Settings | File Templates.
         */
 package example;

@@ -4,6 +4,7 @@
         Date: 2019/11/12
         Info: ADMIN DTO(bean)
         Time: 9:02 오전
+        Class: AdminBean
         To change this template use File | Settings | File Templates.
         */
 package Member.Model;

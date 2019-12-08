@@ -4,6 +4,7 @@
         Date: 2019/12/01
         Info: Talent Insert Parameter Control Servlet
         Time: 19:02 오후
+        Class TalentInsertServlet
         To change this template use File | Settings | File Templates.
         */
 package Talent.Control;

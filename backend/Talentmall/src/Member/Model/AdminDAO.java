@@ -4,6 +4,7 @@
         Date: 2019/11/12
         Info: USE AdminBean DATA access object
         Time: 9:02 오전
+        Class:AdminDAO
         To change this template use File | Settings | File Templates.
         */
 package Member.Model;

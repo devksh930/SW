@@ -4,6 +4,7 @@
         Date: 2019/11/22
         Info: USE MemberBean DATA access object
         Time: 12:02 오전
+        Class:MemberDAO
         To change this template use File | Settings | File Templates.
         */
 package Member.Model;
