@@ -1,0 +1,127 @@
+.section
+{
+    width: 1090px;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.section2
+{
+    width: 804px;
+    height: auto;
+    float: left;
+}
+
+.contents_form {
+    width: 800px;
+    height: auto;
+    padding: 10px 40px;
+    padding-bottom: 50px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 1px 0px, rgba(0, 0, 0, 0.09804) 0px 1px 2px 0px;
+}
+
+.title_st
+{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.img-st
+{
+    border-radius: 30px;
+    width: 120px;
+    height: 120px;
+}
+
+.pro_btn_con_st
+{
+    width: 100%;
+    text-align: center;
+}
+
+.profile_form
+{
+    text-align: center;
+    width: 230px;
+    height: auto;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 1px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    float: right;
+}
+
+.pro_info
+{
+    padding-top: 15px;
+    margin: 15px auto;
+    height: auto;
+    width: 210px;
+    display: inline-block;
+}
+
+.name_st
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn_st
+{
+    width: 230px;
+    height: 47px;
+    background-color: #537061;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 8px;
+    border: none;
+    letter-spacing: 1px;
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+}
+
+.btn_st:hover
+{
+    background-color: #43594e;
+    color: #FFFFFF;
+}
+
+.btn_st:focus {
+    outline: none;
+}
+
+.btn2_st
+{
+    width: 290px;
+    height: 50px;
+    background-color: #537061;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+}
+
+.btn2_st:hover
+{
+    background-color: #43594e;
+    color: #FFFFFF;
+}
+
+.btn2_st:focus {
+    outline: none;
+}
