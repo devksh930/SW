@@ -20,7 +20,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class CategoryDAO extends DBManager {
-  private CategoryDAO(){}
+    private CategoryDAO() {
+    }
+
     private static CategoryDAO instance = new CategoryDAO();
 
     public static CategoryDAO getInstance() {
@@ -64,15 +66,16 @@ public class CategoryDAO extends DBManager {
         }
         return list;
     } // getMember end
+
     public ArrayList<CategoryBean> getDevision(int idx) { //GET CATEGORY LIST in param
-    String sql = "select * from category where category_idx = ?";
-    ArrayList<CategoryBean> list = new ArrayList<CategoryBean>();
-    Connection conn = null;
-    PreparedStatement pstmt = null;
-    ResultSet rs =null;
+        String sql = "select * from category where category_idx = ?";
+        ArrayList<CategoryBean> list = new ArrayList<CategoryBean>();
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
 
         try {
-            conn= DBManager.connect();
+            conn = DBManager.connect();
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, String.valueOf(idx));
             rs = pstmt.executeQuery();
@@ -90,7 +93,7 @@ public class CategoryDAO extends DBManager {
 
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 if (rs != null)
                     rs.close();
