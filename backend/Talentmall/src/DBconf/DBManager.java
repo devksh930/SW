@@ -22,15 +22,16 @@ public class DBManager {
     public static Connection connection = null;
 
     public static void main(String[] args) {
-        // Connection
-        //connect();
+        /* Connection TEST
+        connect();
 
-        // Close
-        //close();
+        // Close TEST
+        close();
+         */
     }
 
-    public static Connection connect()
-    {
+
+    public static Connection connect() { //DB CONNECT
         try {
             Class.forName(databaseDriver);
             connection = DriverManager.getConnection(databaseUrl, databaseUser, databasePassword);
@@ -43,7 +44,7 @@ public class DBManager {
         return connection;
     }
 
-    public static void close() {
+    public static void close() { //DB USE AFTER CLOSE
         try {
             if (connection != null) {
                 connection.close();

@@ -1,7 +1,7 @@
 /*
         Created by IntelliJ IDEA.
         User: devksh930
-        Date: 2019/11/12
+        Date: 2019/11/28
         Info: MEMBER JOIN parameter control servlet
         Time: 9:02 오전
         To change this template use File | Settings | File Templates.
@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-public class JoinServlet extends HttpServlet {
+public class JoinServlet extends HttpServlet { //MEMBER JOIN PARAM
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
 
@@ -31,6 +31,7 @@ public class JoinServlet extends HttpServlet {
         String phone = request.getParameter("phone");
         String role = request.getParameter("role");
         MemberBean memberBean = new MemberBean();
+
         memberBean.setId(id);
         memberBean.setPw(pw);
         memberBean.setName(name);
@@ -38,8 +39,10 @@ public class JoinServlet extends HttpServlet {
         memberBean.setPhone(phone);
         memberBean.setKind(role);
         MemberDAO memberDAO = MemberDAO.getInstance();
+
         int result = memberDAO.memberJoin(memberBean);
         HttpSession session = request.getSession();
+
         if (result == 1) {
             session.setAttribute("id", memberBean.getId());
             request.setAttribute("message", "회원 가입에 성공했습니다.");
@@ -47,7 +50,7 @@ public class JoinServlet extends HttpServlet {
             request.setAttribute("message", "회원 가입에 실패했습니다.");
         }
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("mainPage.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request, response);
     }
 

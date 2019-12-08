@@ -1,7 +1,7 @@
 /*
         Created by IntelliJ IDEA.
         User: devksh930
-        Date: 2019/11/12
+        Date: 2019/11/28
         Info: Member Update parameter control servlet
         Time: 9:02 오전
         To change this template use File | Settings | File Templates.
@@ -34,22 +34,24 @@ public class UpdateServlet extends HttpServlet {
         memberBean.setName(name);
         memberBean.setPhone(phone);
         MemberDAO memberDAO = MemberDAO.getInstance();
-        System.out.println("MEMBER DAO");
-        System.out.println(memberBean.getId());
-        System.out.println(memberBean.getPw());
-        System.out.println(memberBean.getName());
-        System.out.println(memberBean.getPhone());
+        //PARAM DEBUG
+//        System.out.println("MEMBER DAO");
+//        System.out.println(memberBean.getId());
+//        System.out.println(memberBean.getPw());
+//        System.out.println(memberBean.getName());
+//        System.out.println(memberBean.getPhone());
 
         int result = memberDAO.memberUpdate(memberBean.getId(),memberBean.getPw(),memberBean.getName(),memberBean.getPhone());
         HttpSession session = request.getSession();
-        if (result == 1) {
+
+        if (result == 1) { //CHECK RETURN PARAM
             session.setAttribute("id", memberBean.getId());
-            request.setAttribute("message", "회원 가입에 성공했습니다.");
+            request.setAttribute("message", "회원 수정에 성공했습니다.");
         } else {
-            request.setAttribute("message", "회원 가입에 실패했습니다.");
+            request.setAttribute("message", "회원 수정에 실패했습니다.");
 
         }
-        RequestDispatcher dispatcher = request.getRequestDispatcher("mainPage.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("indxe.jsp");
         dispatcher.forward(request,response);
 
 

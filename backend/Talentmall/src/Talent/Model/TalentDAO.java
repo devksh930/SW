@@ -1,7 +1,7 @@
 /*
         Created by IntelliJ IDEA.
         User: devksh930
-        Date: 2019/11/12
+        Date: 2019/12/4
         Info: USE TalentBean DATA access object
         Time: 9:02 오전
         To change this template use File | Settings | File Templates.
@@ -27,7 +27,8 @@ public class TalentDAO {
     public static TalentDAO getInstance() {
         return instance;
     }
-    public int deltalent(String idx) {
+
+    public int deltalent(String idx) { //DELTE TALENT SQL
         int result = -1;
         String sql = "DELETE FROM talents where idx = ?";
         Connection conn = null;
@@ -39,7 +40,7 @@ public class TalentDAO {
             result = pstmt.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 if (pstmt != null)
                     pstmt.close();
@@ -53,7 +54,7 @@ public class TalentDAO {
     }
 
 
-    public int updatetalent(String title, String content, String idx) {
+    public int updatetalent(String title, String content, String idx) { //UPDATE TALENT SQL
         int result = -1;
         String sql = "UPDATE talents SET title=?, contents=? where idx = ? ";
         Connection conn = null;
@@ -80,7 +81,8 @@ public class TalentDAO {
         }
         return result;
     }
-    public TalentBean detailview(String talentidx) {
+
+    public TalentBean detailview(String talentidx) { //TALENT DETAIL VIEW
         TalentBean talentBean = null;
         String sql = "select * from talents where idx=?";
         Connection conn = null;
@@ -100,7 +102,7 @@ public class TalentDAO {
                 talentBean.setEnd_date(rs.getString("end_date"));
                 talentBean.setMember_id(rs.getString("member_id"));
                 talentBean.setCategory_id(rs.getString("category_idx"));
-                System.out.println("query??" + talentBean.getContents());
+                // System.out.println("query??" + talentBean.getContents());
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -119,7 +121,7 @@ public class TalentDAO {
         return talentBean;
     } // getMember end
 
-    public ArrayList<TalentBean> getList() {
+    public ArrayList<TalentBean> getList() { //TALENT GET ALL LIST
         String sql = "select * from talents";
         ArrayList<TalentBean> list = new ArrayList<TalentBean>();
         Connection conn = null;
@@ -139,9 +141,6 @@ public class TalentDAO {
                 talentBean.setMember_id(rs.getString("member_id"));
                 talentBean.setCategory_id(rs.getString("category_idx"));
                 list.add(talentBean);
-                for (int i = 0; i < list.size(); i++) {
-                    System.out.println(list.get(i).getTitle());
-                } //카테고리 테스트
 
 
             }
@@ -164,7 +163,7 @@ public class TalentDAO {
         return list;
     }
 
-    public int talentInsert(String category, String title, String id, String content) {
+    public int talentInsert(String category, String title, String id, String content) { //TALENT INSERT SQL
         int result = -1;
         String sql = "INSERT INTO talents (title, contents,end_date, member_id,category_idx) VALUES (?, ?, CURRENT_TIMESTAMP + INTERVAL '7' DAY, ?,?)";
         Connection conn = null;
@@ -194,7 +193,7 @@ public class TalentDAO {
     }
 
 
-    public ArrayList<TalentBean> getCategoryList(String idx) {
+    public ArrayList<TalentBean> getCategoryList(String idx) { //TALENT INSERTING GET CATEGORY
         String sql = "select * from talents where category_idx = ?";
         ArrayList<TalentBean> list = new ArrayList<TalentBean>();
         Connection conn = null;

@@ -29,13 +29,14 @@ public class CategoryServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //Category parameter control
         CategoryDAO categoryDAO = CategoryDAO.getInstance();
+        //CatergoryBean --> DAO RUN SQL
         List<CategoryBean> sectionlist=categoryDAO.getsection();
 
-//        List<CategoryBean> sectionlist=categoryDAO.getDevision(2);
+//        List<CategoryBean> sectionlist=categoryDAO.getDevision(2); TEST CASE param IDX
 
         request.setAttribute("sectionlist",sectionlist);
 
-        RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-        rd.forward(request,response);
+       // RequestDispatcher rd = request.getRequestDispatcher("indextest.jsp");
+   //     rd.forward(request,response);
     }
 }

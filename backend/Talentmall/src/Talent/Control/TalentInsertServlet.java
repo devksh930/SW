@@ -1,9 +1,9 @@
 /*
         Created by IntelliJ IDEA.
         User: devksh930
-        Date: 2019/11/12
+        Date: 2019/12/01
         Info: Talent Insert Parameter Control Servlet
-        Time: 9:02 오전
+        Time: 19:02 오후
         To change this template use File | Settings | File Templates.
         */
 package Talent.Control;
@@ -30,13 +30,17 @@ public class TalentInsertServlet extends HttpServlet {
         String title = request.getParameter("title");
         String id = request.getParameter("id");
         String content = request.getParameter("content");
+       /*
+        //CHCK PARAM
         System.out.println("카, 타, 아,콘");
         System.out.println(category);
         System.out.println(title);
         System.out.println(id);
         System.out.println(content);
+        */
         TalentDAO talentDAO = TalentDAO.getInstance();
         int result = talentDAO.talentInsert(category, title, id, content);
+
         if (result == 1) {
             request.setAttribute("message", "재능 등록에 성공했습니다.");
         } else {

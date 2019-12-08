@@ -1,9 +1,9 @@
 /*
         Created by IntelliJ IDEA.
         User: devksh930
-        Date: 2019/11/12
+        Date: 2019/12/01
         Info: Talente Detailview Parameter Control Servlet
-        Time: 9:02 오전
+        Time: 21:02 오후
         To change this template use File | Settings | File Templates.
         */
 package Talent.Control;
@@ -29,18 +29,19 @@ public class TalentdetailServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
-        String idx= request.getParameter("idx");
-        System.out.println("idx는" +idx);
+
+        String idx = request.getParameter("idx");
+        System.out.println("idx는" + idx);
         TalentDAO talentDAO = TalentDAO.getInstance();
         TalentBean detailview = null;
-        detailview = talentDAO.detailview(idx);
+        detailview = talentDAO.detailview(idx);//DETAIL VIEW QUERY
 
-       //System.out.println("Bena??"+detailview.getTitle()+detailview.getContents());
-        request.setAttribute("detailview",detailview);
+        //System.out.println("Bena??"+detailview.getTitle()+detailview.getContents());
+        request.setAttribute("detailview", detailview);
 
 
-        RequestDispatcher rd =request.getRequestDispatcher("detailSection.jsp");
-        rd.forward(request,response);
+        RequestDispatcher rd = request.getRequestDispatcher("detailSection.jsp");
+        rd.forward(request, response);
 
     }
 }

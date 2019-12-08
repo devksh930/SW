@@ -1,9 +1,9 @@
 /*
         Created by IntelliJ IDEA.
         User: devksh930
-        Date: 2019/11/12
+        Date: 2019/11/22
         Info: USE MemberBean DATA access object
-        Time: 9:02 오전
+        Time: 12:02 오전
         To change this template use File | Settings | File Templates.
         */
 package Member.Model;
@@ -29,7 +29,7 @@ public class MemberDAO extends DBManager {
         return instance;
     }
 
-    public int memberCheck(String id, String pw) {
+    public int memberCheck(String id, String pw) { //MEMBER CHECK
         int result = -1;
         String sql = "SELECT pw FROM members WHERE id=?";
         ResultSet rs = null;
@@ -70,7 +70,7 @@ public class MemberDAO extends DBManager {
         return result;
     }
 
-    public MemberBean getMember(String userid) {
+    public MemberBean getMember(String userid) { //GET LOGIN MEMBER INFO
         MemberBean memberBean = null;
         String sql = "select * from members where id=?";
         Connection conn = null;
@@ -106,7 +106,7 @@ public class MemberDAO extends DBManager {
         return memberBean;
     } // getMember end
 
-    public int memberJoin(MemberBean memberBean) {
+    public int memberJoin(MemberBean memberBean) { //MEMBER JOIN SQL
         int result = -1;
         String sql = "insert into members values(?,?,?,?,?)";
         String kind = null;
@@ -119,7 +119,8 @@ public class MemberDAO extends DBManager {
             pstmt.setString(2, memberBean.getPw());
             pstmt.setString(3, memberBean.getName());
             pstmt.setString(4, memberBean.getPhone());
-            if (memberBean.getKind().equals("소비자")) {
+
+            if (memberBean.getKind().equals("소비자")) { //CHCKE KIND
                 kind = "1";
             } else if (memberBean.getKind().equals("생산자")) {
                 kind = "2";
@@ -143,7 +144,7 @@ public class MemberDAO extends DBManager {
         return result;
     }
 
-    public int memberUpdate(String userid, String userpw, String username, String userphone){
+    public int memberUpdate(String userid, String userpw, String username, String userphone){ //MEMBER INFO UPDATE SQL
         int result = -1;
         String sql ="UPDATE members SET pw=?,name=?,phone=? where id = ? ";
         Connection conn = null;

@@ -1,9 +1,9 @@
 /*
         Created by IntelliJ IDEA.
         User: devksh930
-        Date: 2019/11/12
+        Date: 2019/12/01
         Info: Talent List Control Servlet
-        Time: 9:02 오전
+        Time: 9:52 오전
         To change this template use File | Settings | File Templates.
         */
 package Talent.Control;
@@ -37,7 +37,7 @@ public class TalentServlet extends HttpServlet {
 
         TalentDAO talentDAO = TalentDAO.getInstance();
         List<TalentBean> talentlist = null;
-        switch (urlSubPath) {
+        switch (urlSubPath) { //URL PATH CHECK /talent/all,design,id,business,text etc....
             case "all":
                 System.out.println(urlSubPath);
                 talentlist = talentDAO.getList();

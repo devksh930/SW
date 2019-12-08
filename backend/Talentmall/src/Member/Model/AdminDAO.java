@@ -28,7 +28,7 @@ public class AdminDAO extends DBManager {
         return instance;
     }
 
-    public int memberCheck(String id, String pw) {
+    public int memberCheck(String id, String pw) { //DB CHECK ID SQL
         int result = -1;
         String sql = "SELECT pw FROM admins WHERE id=?";
         ResultSet rs = null;
@@ -69,7 +69,7 @@ public class AdminDAO extends DBManager {
         return result;
     }
 
-    public AdminBean getMember(String id) {
+    public AdminBean getMember(String id) { //ADMIN CHECK
         AdminBean adminBean = null;
         String sql = "select * from admin where id=?";
         Connection conn = null;

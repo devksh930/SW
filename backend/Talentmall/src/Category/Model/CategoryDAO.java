@@ -1,7 +1,7 @@
 /*
         Created by IntelliJ IDEA.
         User: devksh930
-        Date: 2019/11/12
+        Date: 2019/11/29
         Info: commission list
         Time: 9:02 오전
         To change this template use File | Settings | File Templates.
@@ -26,7 +26,7 @@ public class CategoryDAO extends DBManager {
         return instance;
     }
 
-    public ArrayList<CategoryBean> getsection() {
+    public ArrayList<CategoryBean> getsection() { //GET CATEGORY LIST ALL
         String sql = "select * from category";
         ArrayList<CategoryBean> list = new ArrayList<CategoryBean>();
         Connection conn = null;
@@ -63,7 +63,7 @@ public class CategoryDAO extends DBManager {
         }
         return list;
     } // getMember end
-    public ArrayList<CategoryBean> getDevision(int idx) {
+    public ArrayList<CategoryBean> getDevision(int idx) { //GET CATEGORY LIST in param
     String sql = "select * from category where category_idx = ?";
     ArrayList<CategoryBean> list = new ArrayList<CategoryBean>();
     Connection conn = null;

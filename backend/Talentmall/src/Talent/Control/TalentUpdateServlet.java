@@ -1,9 +1,9 @@
 /*
         Created by IntelliJ IDEA.
         User: devksh930
-        Date: 2019/11/12
+        Date: 2019/12/02
         Info: Talent Update parameter Control Servlet
-        Time: 9:02 오전
+        Time: 20:12 오전
         To change this template use File | Settings | File Templates.
         */
 package Talent.Control;
@@ -31,12 +31,16 @@ public class TalentUpdateServlet extends HttpServlet {
         String title = request.getParameter("title");
         String id = request.getParameter("id");
         String content = request.getParameter("content");
+       //PARAM CHECK
+        /*
         System.out.println(idx);
         System.out.println("카, 타, 아,콘");
         System.out.println(category);
         System.out.println(title);
         System.out.println(id);
         System.out.println(content);
+
+         */
         TalentDAO talentDAO = TalentDAO.getInstance();
         int result = talentDAO.updatetalent(title,content,idx);
         if (result == 1) {
@@ -45,7 +49,7 @@ public class TalentUpdateServlet extends HttpServlet {
             request.setAttribute("message", "재능 추가에 실패했습니다.");
         }
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("mainPage.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         System.out.println(dispatcher);
         dispatcher.forward(request,response);
     }
@@ -61,7 +65,7 @@ public class TalentUpdateServlet extends HttpServlet {
         TalentBean detailview = null;
         detailview = talentDAO.detailview(idx);
 
-        System.out.println("Bena??" + detailview.getTitle() + detailview.getContents());
+       // System.out.println("Bean??" + detailview.getTitle() + detailview.getContents()); //BEAN PARAM CHECK
 
         request.setAttribute("categoryList",categoryList);
         request.setAttribute("detailview", detailview);
